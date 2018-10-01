@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CheatSheet]]></title>
+    <url>%2Fpost%2Fd41a18cb.html</url>
+    <content type="text"><![CDATA[Cheating Sheet Markdown 1个空格：&amp;nbsp; 字体、字号、颜色：&lt;font face=&quot;Charmonman&quot; size= 2 color=blue&gt;something&lt;/font&gt;test 段内换行：&lt;/br&gt; 显示摘要：&lt;!--more--&gt; Hexo 初始化目录：hexo init [folder] 新建文章：hexo new [layout] &lt;title&gt;或hexo n [layout] &lt;title&gt; 新建草稿：hexo new draft &lt;title&gt; 将草稿发布为正式文章：hexo publish &lt;title&gt; 生成静态文件：hexo generate或hexo g 监听文件变化：hexo g --watch 或 hexo g -w 部署：hexo deploy或hexo d 先生成后部署：hexo d -g 启动本地服务器（服务器会监听文件变化并自动更新）：hexo server或hexo s 启动调试：hexo s --debug 预览草稿：hexo s --draft 清除缓存：hexo clean]]></content>
+      <categories>
+        <category>Others</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>markdown</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F09%2F30%2Fhello-world%2F</url>
+    <url>%2Fpost%2F4a17b156.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post 1$ hexo new "My New Post" More info: Writing Run server 1$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites 1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>Others</category>

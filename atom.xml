@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-01T08:28:53.265Z</updated>
+  <updated>2018-10-01T13:51:41.065Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -17,9 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CheatSheet</title>
+    <link href="https://molindeng.github.io/post/d41a18cb.html"/>
+    <id>https://molindeng.github.io/post/d41a18cb.html</id>
+    <published>2018-10-01T13:47:44.000Z</published>
+    <updated>2018-10-01T13:51:41.065Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;Cheating Sheet&lt;/h1&gt;
+&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1个空格：&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;字体、字号、颜色：&lt;code&gt;&amp;lt;font face=&amp;quot;Ch
+      
+    
+    </summary>
+    
+      <category term="Others" scheme="https://molindeng.github.io/categories/Others/"/>
+    
+    
+      <category term="hexo" scheme="https://molindeng.github.io/tags/hexo/"/>
+    
+      <category term="markdown" scheme="https://molindeng.github.io/tags/markdown/"/>
+    
+      <category term="git" scheme="https://molindeng.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="https://molindeng.github.io/2018/09/30/hello-world/"/>
-    <id>https://molindeng.github.io/2018/09/30/hello-world/</id>
+    <link href="https://molindeng.github.io/post/4a17b156.html"/>
+    <id>https://molindeng.github.io/post/4a17b156.html</id>
     <published>2018-09-30T14:07:39.681Z</published>
     <updated>2018-10-01T08:28:53.265Z</updated>
     
