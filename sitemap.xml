@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://molindeng.github.io/about/index.html</loc>
+    
+    <lastmod>2018-10-01T11:17:05.801Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://molindeng.github.io/2018/09/30/hello-world/</loc>
     
     <lastmod>2018-10-01T08:28:53.265Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://molindeng.github.io/tags/index.html</loc>
     
     <lastmod>2018-10-01T07:01:45.132Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://molindeng.github.io/about/index.html</loc>
-    
-    <lastmod>2018-10-01T05:28:36.616Z</lastmod>
     
   </url>
   
