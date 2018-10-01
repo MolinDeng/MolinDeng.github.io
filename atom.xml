@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-01T13:51:41.065Z</updated>
+  <updated>2018-10-01T13:54:20.933Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -21,18 +21,18 @@
     <link href="https://molindeng.github.io/post/d41a18cb.html"/>
     <id>https://molindeng.github.io/post/d41a18cb.html</id>
     <published>2018-10-01T13:47:44.000Z</published>
-    <updated>2018-10-01T13:51:41.065Z</updated>
+    <updated>2018-10-01T13:54:20.933Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h1&gt;Cheating Sheet&lt;/h1&gt;
+      &lt;h1&gt;Cheating Sheet&lt;/h1&gt;
 &lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;1个空格：&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;字体、字号、颜色：&lt;code&gt;&amp;lt;font face=&amp;quot;Ch
-      
+&lt;li&gt;字体、字号、颜色：&lt;code&gt;&amp;lt;font face=&amp;quot;Charmonman&amp;quot; size= 2 color=blue&amp;gt;something&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;2&quot; color=&quot;blue&quot;&gt;test&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;段内换行：&lt;code&gt;&amp;lt;/br&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;显示摘要：&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -52,14 +52,15 @@
     <link href="https://molindeng.github.io/post/4a17b156.html"/>
     <id>https://molindeng.github.io/post/4a17b156.html</id>
     <published>2018-09-30T14:07:39.681Z</published>
-    <updated>2018-10-01T08:28:53.265Z</updated>
+    <updated>2018-10-01T13:54:07.589Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;
+&lt;h3 id=&quot;create-a-new-post&quot;&gt;Create a new post&lt;/h3&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
