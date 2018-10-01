@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-01T13:54:20.933Z</updated>
+  <updated>2018-10-01T15:38:41.703Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -17,16 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CheatSheet</title>
-    <link href="https://molindeng.github.io/post/d41a18cb.html"/>
-    <id>https://molindeng.github.io/post/d41a18cb.html</id>
-    <published>2018-10-01T13:47:44.000Z</published>
-    <updated>2018-10-01T13:54:20.933Z</updated>
+    <title>How to build this blog using Hexo and GitHub Pages</title>
+    <link href="https://molindeng.github.io/post/3ace9508.html"/>
+    <id>https://molindeng.github.io/post/3ace9508.html</id>
+    <published>2018-10-01T14:20:52.000Z</published>
+    <updated>2018-10-01T15:38:41.703Z</updated>
     
     <summary type="html">
     
-      &lt;h1&gt;Cheating Sheet&lt;/h1&gt;
-&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+      &lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown：文章编写，内置层级、列表、超链接、图片插入、代码、数学公式等语法支持&lt;/li&gt;
+&lt;li&gt;Hexo：博客构建，快速搭建生成预览、发布&lt;/li&gt;
+&lt;li&gt;GitHub Pages：使用GitHub Pages托管，&lt;u&gt;免费&lt;/u&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Others" scheme="https://molindeng.github.io/categories/Others/"/>
+    
+    
+      <category term="hexo" scheme="https://molindeng.github.io/tags/hexo/"/>
+    
+      <category term="GitPages" scheme="https://molindeng.github.io/tags/GitPages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cheating Sheet</title>
+    <link href="https://molindeng.github.io/post/d41a18cb.html"/>
+    <id>https://molindeng.github.io/post/d41a18cb.html</id>
+    <published>2018-10-01T13:47:44.000Z</published>
+    <updated>2018-10-01T15:22:33.707Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;1个空格：&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;字体、字号、颜色：&lt;code&gt;&amp;lt;font face=&amp;quot;Charmonman&amp;quot; size= 2 color=blue&amp;gt;something&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;2&quot; color=&quot;blue&quot;&gt;test&lt;/font&gt;&lt;/li&gt;
