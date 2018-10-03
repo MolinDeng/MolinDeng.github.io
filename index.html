@@ -491,7 +491,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.7k</span>
+                <span title="Symbols count in article">2.6k</span>
               
 
               
@@ -527,11 +527,9 @@
       
         
           <p><font face="Charmonman" size="3" color="blue">Everyday programing !</font> See solutions on <a href="https://github.com/MolinDeng/Leetcode" target="_blank" rel="noopener">My LeetCode</a></p>
-<h3 id="1-two-sum">1. Two Sum</h3>
-<ul>
+<h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="1. Two Sum"></a>1. Two Sum</h3><ul>
 <li>BF with binary search</li>
-<li>哈希表<code>T = O(N) S = O(N)</code>
-<ul>
+<li>哈希表<code>T = O(N) S = O(N)</code><ul>
 <li>建立<code>value-index</code>映射</li>
 <li>依次遍历，如果<code>另一半</code>在map中，返回当前下标<code>i</code>和<code>map[另一半]</code>；反之将当前<code>&lt;value, index&gt;</code>插入map</li>
 </ul>
@@ -641,7 +639,7 @@
                 
               
 
-              <time title="Created: 2018-10-03 13:21:42 / Modified: 14:16:08" itemprop="dateCreated datePublished" datetime="2018-10-03T13:21:42+08:00">2018-10-03</time>
+              <time title="Created: 2018-10-03 13:21:42 / Modified: 14:36:07" itemprop="dateCreated datePublished" datetime="2018-10-03T13:21:42+08:00">2018-10-03</time>
             
 
             
@@ -874,7 +872,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-03 13:36:48" itemprop="dateModified" datetime="2018-10-03T13:36:48+08:00">2018-10-03</time>
+                <time title="Modified: 2018-10-03 14:36:47" itemprop="dateModified" datetime="2018-10-03T14:36:47+08:00">2018-10-03</time>
               
             
           </span>
@@ -1114,7 +1112,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">547</span>
+                <span title="Symbols count in article">541</span>
               
 
               
@@ -1149,8 +1147,7 @@
 
       
         
-          <h2 id="markdown">Markdown</h2>
-<ul>
+          <h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><ul>
 <li>1个空格：<code>&amp;nbsp;</code></li>
 <li>字体、字号、颜色：<code>&lt;font face=&quot;Charmonman&quot; size= 2 color=blue&gt;something&lt;/font&gt;</code><font face="Charmonman" size="2" color="blue">test</font></li>
 <li>段内换行：<code>&lt;/br&gt;</code></li>
@@ -1322,7 +1319,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">436</span>
+                <span title="Symbols count in article">431</span>
               
 
               
@@ -1358,9 +1355,7 @@
       
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -2115,9 +2110,28 @@
 
   
     
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css" type="text/css">
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      TeX: {equationNumbers: { autoNumber: "AMS" }}
+    });
+</script>
 
-   
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
