@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -176,7 +176,7 @@
 <meta property="og:url" content="https://molindeng.github.io/post/62ae0339.html">
 <meta property="og:site_name" content="Morning&#39;s blog">
 <meta property="og:description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理) string operation using insert  insert function cannot accept reverse_iterator  reverse the whole string, then do it as n">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.imgur.com/pxvdpLr.png">
 <meta property="og:image" content="https://i.imgur.com/h6tBukd.png">
 <meta property="og:image" content="https://i.imgur.com/dS8Exbx.png">
@@ -245,7 +245,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -291,7 +291,7 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
         
         
@@ -299,7 +299,7 @@
           
           <li class="menu-item menu-item-about">
     <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />Über</a>
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
   </li>
         
         
@@ -315,7 +315,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Kategorien</a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
   </li>
         
         
@@ -323,7 +323,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
   </li>
 
       
@@ -333,7 +333,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Suche</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
         </li>
       
     </ul>
@@ -440,14 +440,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-10-03 13:21:42 / Updated at: 14:36:07" itemprop="dateCreated datePublished" datetime="2018-10-03T13:21:42+08:00">2018-10-03</time>
+              <time title="Created: 2018-10-03 13:21:42 / Modified: 14:36:07" itemprop="dateCreated datePublished" datetime="2018-10-03T13:21:42+08:00">2018-10-03</time>
             
 
             
@@ -466,7 +466,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/OJ/" itemprop="url" rel="index"><span itemprop="name">OJ</span></a></span>
@@ -505,7 +505,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">19k</span>
+                <span title="Symbols count in article">859</span>
               
 
               
@@ -519,7 +519,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">17 mins.</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -577,7 +577,7 @@
 </li>
 </ul>
 </li>
-<li><p>using vector&lt;vector&lt;int>&gt;  store path</p>
+<li><p>using vector<vector<int\>&gt;  store path</vector<int\></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(s_dist[curr] + dist[curr][i] &lt; s_dist[i]) &#123;</span><br><span class="line">    s_dist[i] = s_dist[curr] + dist[curr][i];</span><br><span class="line">    team_cnt[i] = team_cnt[curr] + teams[i];</span><br><span class="line">    path_cnt[i] = path_cnt[curr];</span><br><span class="line">    path[i].clear();</span><br><span class="line">    path[i].push_back(curr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(s_dist[curr] + dist[curr][i] == s_dist[i]) &#123;</span><br><span class="line">    <span class="keyword">if</span>(team_cnt[i] &lt; teams[i] + team_cnt[curr])</span><br><span class="line">      	team_cnt[i] = teams[i] + team_cnt[curr];</span><br><span class="line">    path_cnt[i] += path_cnt[curr];</span><br><span class="line">    path[i].push_back(curr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -732,7 +732,7 @@
 <li>vector\<int> path储存前驱</int></li>
 </ul>
 <h2 id="1031-字符串操作，数学问题"><a href="#1031-字符串操作，数学问题" class="headerlink" title="1031(字符串操作，数学问题)"></a>1031(字符串操作，数学问题)</h2><ul>
-<li>$2x+y-2=N\to x = \frac{N+2-y}{2}$, 目的是为了$y-x$大于0且最小，$y-x=\frac{3y-N-2}{2}$只能等于$i,i\in{0,1,2,..}$，遍历i，解得y即可</li>
+<li>$2x+y-2=N\to x = \frac{N+2-y}{2}$, 目的是为了$y-x$大于0且最小，$y-x=\frac{3y-N-2}{2}$只能等于$i,i\in\{0,1,2,..\}$，遍历i，解得y即可</li>
 </ul>
 <h2 id="1032-数组形式链表"><a href="#1032-数组形式链表" class="headerlink" title="1032(数组形式链表)"></a>1032(数组形式链表)</h2><h2 id="1033-贪心"><a href="#1033-贪心" class="headerlink" title="1033(贪心)"></a>1033(贪心)</h2><h2 id="1034-DFS，有向图遍历，map应用"><a href="#1034-DFS，有向图遍历，map应用" class="headerlink" title="1034(DFS，有向图遍历，map应用)"></a>1034(DFS，有向图遍历，map应用)</h2><ul>
 <li>内存有限，时间有限，给所有的id(string)分配连续的index下标，降低空间要求，同时数组操作更快</li>
@@ -1347,10 +1347,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -1375,7 +1375,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -1394,7 +1394,7 @@
                       
                     
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -1435,7 +1435,7 @@
                       
                     
                     <span class="site-state-item-count">14</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -1533,7 +1533,7 @@
 
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 

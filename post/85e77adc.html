@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -176,7 +176,7 @@
 <meta property="og:url" content="https://molindeng.github.io/post/85e77adc.html">
 <meta property="og:site_name" content="Morning&#39;s blog">
 <meta property="og:description" content="Here’s a string “BBC ABCDAB ABCDABCDABDE”，I wanna know，if it contains another string “ABCDABD”.We call “ABCDABD”  search string or key, the other is source string Knuth-Morris-Pratt算法123BBC ABCDAB ABC">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.imgur.com/OIhGOjW.png">
 <meta property="og:updated_time" content="2018-10-03T09:14:49.288Z">
 <meta name="twitter:card" content="summary">
@@ -241,7 +241,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -287,7 +287,7 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
   </li>
         
         
@@ -295,7 +295,7 @@
           
           <li class="menu-item menu-item-about">
     <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />Über</a>
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
   </li>
         
         
@@ -311,7 +311,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Kategorien</a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
   </li>
         
         
@@ -319,7 +319,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
   </li>
 
       
@@ -329,7 +329,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Suche</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
         </li>
       
     </ul>
@@ -436,14 +436,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-10-03 14:59:05 / Updated at: 17:14:49" itemprop="dateCreated datePublished" datetime="2018-10-03T14:59:05+08:00">2018-10-03</time>
+              <time title="Created: 2018-10-03 14:59:05 / Modified: 17:14:49" itemprop="dateCreated datePublished" datetime="2018-10-03T14:59:05+08:00">2018-10-03</time>
             
 
             
@@ -462,7 +462,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
@@ -501,7 +501,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">5.8k</span>
+                <span title="Symbols count in article">4.4k</span>
               
 
               
@@ -515,7 +515,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">5 mins.</span>
+                <span title="Reading time">4 mins.</span>
               
             </div>
           
@@ -552,6 +552,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">          |</span><br><span class="line">        ABCDABD</span><br></pre></td></tr></table></figure>
 <p><strong>前缀与后缀以及《部分匹配表》（Partial Match Table）</strong><br>“前缀”指除了最后一个字符以外，一个字符串的全部头部子串构成的集合，必须从头开始；<br>“后缀”指除了第一个字符以外，一个字符串的全部尾部组合构成的集合，必须从尾部开始。</p>
 <p>Partial Match Table就是前缀和后缀的最长共有子串的长度</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -606,7 +607,9 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>现在我们得到了《部分匹配表》</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -633,12 +636,13 @@
 </tr>
 </tbody>
 </table>
-<p>当<code>D</code>和<code></code>不匹配时，已匹配的子串”ABCDAB”的部分匹配值是<code>2</code>，那么search key向后移动<code>4</code>位</p>
+</div>
+<p>当<code>D</code>和<code>`不匹配时，已匹配的子串&quot;ABCDAB&quot;的部分匹配值是</code>2<code>，那么search key向后移动</code>4`位</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">移动位数 = 已匹配的字符数 - 对应的部分匹配值 // 4 = 6 - 2</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">          |</span><br><span class="line">        ABCDABD</span><br></pre></td></tr></table></figure>
-<p>此时<code>C</code>与<code></code>不匹配，search key向后移动<code>2-0=2</code>位</p>
+<p>此时<code>C</code>与<code>`不匹配，search key向后移动</code>2-0=2`位</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">          |</span><br><span class="line">          ABCDABD</span><br></pre></td></tr></table></figure>
-<p>因为<code></code>与<code>A</code>不匹配，继续后移一位。</p>
+<p>因为<code>`与</code>A`不匹配，继续后移一位。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">           |</span><br><span class="line">           ABCDABD</span><br></pre></td></tr></table></figure>
 <p>以此类推~</p>
 <h3 id="计算PMT"><a href="#计算PMT" class="headerlink" title="计算PMT"></a>计算PMT</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makenxt</span><span class="params">(<span class="built_in">string</span>&amp; P, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nxt)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len = P.length();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, l = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(l &gt; <span class="number">0</span> &amp;&amp; P[l] != P[i])</span><br><span class="line">            l = nxt[l<span class="number">-1</span>];</span><br><span class="line">        <span class="keyword">if</span>(P[l] == P[i]) l++;</span><br><span class="line">        nxt[i] = l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -667,8 +671,12 @@
 <p>此时，第一个字符不匹配，再看<u>末位对齐位置的下一个字符</u>，即字符<code>r</code>，<code>r</code>在search string中，那么向后移动search string<code>6 - 3 = 3</code>位，使得source string中<code>r</code>与search string中<u>最后一个</u><code>r</code>对齐</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">substring searching</span><br><span class="line">          ||||||</span><br><span class="line">          search</span><br></pre></td></tr></table></figure>
 <h3 id="Shift-table"><a href="#Shift-table" class="headerlink" title="Shift table"></a>Shift table</h3><p>《偏移表》是针对source string建立的，而《部分匹配表》是针对search string建立的</p>
-<p>$$<br>shift[c]=<br>\begin{cases}<br>        m-max{i&lt;m|P[i]=c}, &amp; if\ c in P[0..m-1]\<br>        m+1, &amp; otherwise<br>\end{cases}<br>$$</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_shift</span><span class="params">(<span class="built_in">string</span>&amp; P)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pLen = P.length();</span><br><span class="line">    shift.resize(<span class="number">256</span>, pLen+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pLen; ++i) </span><br><span class="line">        shift[P[i]] -= i+<span class="number">1</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+shift[c]=
+\begin{cases} 
+        m-max\{i<m|P[i]=c\}, & if\ c in P[0..m-1]\\
+        m+1, & otherwise
+\end{cases}</script><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_shift</span><span class="params">(<span class="built_in">string</span>&amp; P)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pLen = P.length();</span><br><span class="line">    shift.resize(<span class="number">256</span>, pLen+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pLen; ++i) </span><br><span class="line">        shift[P[i]] -= i+<span class="number">1</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><em>full code</em></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; shift;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_shift</span><span class="params">(<span class="built_in">string</span>&amp; P)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pLen = P.length();</span><br><span class="line">    shift.resize(<span class="number">256</span>, pLen+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pLen; ++i) </span><br><span class="line">        shift[P[i]] -= i+<span class="number">1</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Sunday</span><span class="params">(<span class="built_in">string</span>&amp; S, <span class="built_in">string</span>&amp; P)</span> </span>&#123;</span><br><span class="line">    get_shift(P);</span><br><span class="line">    <span class="keyword">int</span> sLen = S.length(), pLen = P.length();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i + pLen &lt;= sLen; i += shift[S[i + pLen]], j = <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">while</span>(j &lt; pLen &amp;&amp; S[i+j] == P[j]) j++;</span><br><span class="line">        <span class="keyword">if</span>(j == pLen) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"Pattern starts with idx: "</span> &lt;&lt; i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Not Found"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> S = <span class="string">"search substring"</span>;</span><br><span class="line">    <span class="built_in">string</span> P = <span class="string">"substr"</span>;</span><br><span class="line">    Sunday(S, P);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h2><ul>
@@ -822,10 +830,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -850,7 +858,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -869,7 +877,7 @@
                       
                     
                     <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -910,7 +918,7 @@
                       
                     
                     <span class="site-state-item-count">14</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -1008,7 +1016,7 @@
 
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
