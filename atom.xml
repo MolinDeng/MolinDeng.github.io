@@ -53,11 +53,11 @@
     <link href="https://molindeng.github.io/post/4c3ebdcd.html"/>
     <id>https://molindeng.github.io/post/4c3ebdcd.html</id>
     <published>2018-10-03T05:31:54.000Z</published>
-    <updated>2018-10-03T06:00:15.392Z</updated>
+    <updated>2018-10-03T12:13:56.735Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See solutions on &lt;a href=&quot;https://github.com/MolinDeng/Leetcode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My LeetCode&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;#0099ff&quot;&gt;Everyday programing !&lt;/font&gt; See solutions on &lt;a href=&quot;https://github.com/MolinDeng/Leetcode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My LeetCode&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-Two-Sum&quot;&gt;&lt;a href=&quot;#1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;1. Two Sum&quot;&gt;&lt;/a&gt;1. Two Sum&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;BF with binary search&lt;/li&gt;
 &lt;li&gt;哈希表&lt;code&gt;T = O(N) S = O(N)&lt;/code&gt;&lt;ul&gt;
@@ -72,11 +72,11 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
-      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
-    
       <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
     
   </entry>
   
@@ -85,11 +85,11 @@
     <link href="https://molindeng.github.io/post/62ae0339.html"/>
     <id>https://molindeng.github.io/post/62ae0339.html</id>
     <published>2018-10-03T05:21:42.000Z</published>
-    <updated>2018-10-03T06:36:07.339Z</updated>
+    <updated>2018-10-03T12:14:10.732Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See Solutions on &lt;a href=&quot;https://github.com/MolinDeng/PAT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My PAT&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;#0099ff&quot;&gt;Everyday programing !&lt;/font&gt; See Solutions on &lt;a href=&quot;https://github.com/MolinDeng/PAT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My PAT&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2018.9.8 PAT A Level &lt;img src=&quot;https://i.imgur.com/pxvdpLr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;1001-字符串处理&quot;&gt;&lt;a href=&quot;#1001-字符串处理&quot; class=&quot;headerlink&quot; title=&quot;1001(字符串处理)&quot;&gt;&lt;/a&gt;1001(字符串处理)&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;string operation using insert&lt;/p&gt;
@@ -115,13 +115,13 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
-      <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
-    
-      <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
-    
       <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
     
       <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
+    
+      <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
+    
+      <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
     
   </entry>
   

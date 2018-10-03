@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'IBM Plex Mono', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'IBM Plex Sans', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h1,
 h2,
@@ -1969,7 +1969,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a2ff17;
+  background: #708acc;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2960,4 +2960,40 @@ code {
   padding: 1px 4px;
   word-break: break-all;
   border-radius: 4px;
+}
+@font-face {
+  font-family: Charmonman;
+  src: url("/fonts/Charmonman-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Charmonman;
+  src: url("/fonts/Charmonman-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Lato;
+  src: url("/fonts/Lato-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("/fonts/Lato-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: IBM Plex Sans;
+  src: url("/fonts/IBMPlexSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: IBM Plex Sans;
+  src: url("/fonts/IBMPlexSans-Bold.ttf");
+  font-weight: 700;
+}
+.site-title {
+  line-height: 36px !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  font-family: 'Charmonman' !important;
 }
