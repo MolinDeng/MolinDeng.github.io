@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-03T14:09:59.415Z</updated>
+  <updated>2018-10-03T14:14:41.127Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://molindeng.github.io/post/a65b35ad.html"/>
     <id>https://molindeng.github.io/post/a65b35ad.html</id>
     <published>2018-10-03T13:38:02.000Z</published>
-    <updated>2018-10-03T14:09:59.415Z</updated>
+    <updated>2018-10-03T14:14:41.127Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;My version&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt; v3.7.1&lt;br&gt;Theme – &lt;a href=&quot;https://theme-next.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NexT.Mist&lt;/a&gt; v6.4.2&lt;/p&gt;
 &lt;p&gt;如何载入字体、设置各个模块格式，可以通过观察&lt;code&gt;&amp;lt;hexo-site&amp;gt;\public\css\main.css&lt;/code&gt;中的定义来模仿，然后在&lt;code&gt;&amp;lt;hexo-site&amp;gt;\themes\next\source\css\_custom\custom.styl&lt;/code&gt;中覆写相关定义。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;&lt;br&gt;路径问题：主题相关设置都是相对&lt;code&gt;themes/next/source/&lt;/code&gt;；发布之后的相关设置是相对&lt;code&gt;public/&lt;/code&gt;&lt;br&gt;修改主题相关文件需要执行&lt;code&gt;hexo c&lt;/code&gt;&lt;br&gt;可以在&lt;code&gt;public/css/main.css&lt;/code&gt;中末尾检查新的样式，&lt;code&gt;custom.styl&lt;/code&gt;中的代码都会添加到&lt;code&gt;main.css&lt;/code&gt;的末尾&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;&lt;br&gt;1.路径问题：主题相关设置都是相对&lt;code&gt;themes/next/source/&lt;/code&gt;；发布之后的相关设置是相对&lt;code&gt;public/&lt;/code&gt;&lt;br&gt;2.修改主题相关文件需要执行&lt;code&gt;hexo c&lt;/code&gt;&lt;br&gt;3.可以在&lt;code&gt;public/css/main.css&lt;/code&gt;中末尾检查新的样式，&lt;code&gt;custom.styl&lt;/code&gt;中的代码都会添加到&lt;code&gt;main.css&lt;/code&gt;的末尾&lt;/p&gt;
     
     </summary>
     
