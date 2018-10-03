@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-02T06:37:47.803Z</updated>
+  <updated>2018-10-03T05:54:24.392Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -17,11 +17,90 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode-OJ</title>
+    <link href="https://molindeng.github.io/post/4c3ebdcd.html"/>
+    <id>https://molindeng.github.io/post/4c3ebdcd.html</id>
+    <published>2018-10-03T05:31:54.000Z</published>
+    <updated>2018-10-03T05:54:24.392Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See solutions on &lt;a href=&quot;https://github.com/MolinDeng/Leetcod
+      
+    
+    </summary>
+    
+      <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
+    
+    
+      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
+    
+      <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
+    
+      <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-Advanced-Level</title>
+    <link href="https://molindeng.github.io/post/62ae0339.html"/>
+    <id>https://molindeng.github.io/post/62ae0339.html</id>
+    <published>2018-10-03T05:21:42.000Z</published>
+    <updated>2018-10-03T05:54:15.199Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See Solutions on &lt;a href=&quot;https://github.com/MolinDeng/PAT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My PAT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2018.9.8 PAT A Level &lt;img src=&quot;https://i.imgur.com/pxvdpLr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1001-字符串处理&quot;&gt;1001(字符串处理)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;string operation using insert&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;insert function cannot accept &lt;em&gt;reverse_iterator&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;reverse the whole string, then do it as normal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;convert &lt;em&gt;reverse_it&lt;/em&gt; to &lt;em&gt;it&lt;/em&gt; (&lt;strong&gt;&lt;em&gt;not try, maybe not work&lt;/em&gt;&lt;/strong&gt;)&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;str.insert(r_iter.base(), &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;for each iteration, we should update iterator&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;iter = str.insert(iter, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cplusplus.com/reference/string/string/insert/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cplusplus.com/reference/string/string/insert/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
+    
+    
+      <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
+    
+      <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+      <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
+    
+      <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to build this blog using Hexo and GitHub Pages</title>
     <link href="https://molindeng.github.io/post/3ace9508.html"/>
     <id>https://molindeng.github.io/post/3ace9508.html</id>
     <published>2018-10-01T14:20:52.000Z</published>
-    <updated>2018-10-02T06:37:47.803Z</updated>
+    <updated>2018-10-03T05:36:48.543Z</updated>
     
     <summary type="html">
     
