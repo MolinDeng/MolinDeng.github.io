@@ -25,9 +25,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;Here&#39;s a string &amp;quot;BBC ABCDAB ABCDABCDABDE&amp;quot;，I wanna know，if it contains another string &amp;quot;ABCDABD&amp;quot;.&lt;br&gt;We call &amp;quot;ABCDABD&amp;quot;  &lt;code&gt;search string&lt;/code&gt; or &lt;code&gt;key&lt;/code&gt;, the other is &lt;code&gt;source string&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;knuth-morris-pratt算法&quot;&gt;Knuth-Morris-Pratt算法&lt;/h2&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;BBC ABCDAB ABCDABCDABDE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ABCDABD&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;p&gt;Here’s a string “BBC ABCDAB ABCDABCDABDE”，I wanna know，if it contains another string “ABCDABD”.&lt;br&gt;We call “ABCDABD”  &lt;code&gt;search string&lt;/code&gt; or &lt;code&gt;key&lt;/code&gt;, the other is &lt;code&gt;source string&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Knuth-Morris-Pratt算法&quot;&gt;&lt;a href=&quot;#Knuth-Morris-Pratt算法&quot; class=&quot;headerlink&quot; title=&quot;Knuth-Morris-Pratt算法&quot;&gt;&lt;/a&gt;Knuth-Morris-Pratt算法&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;BBC ABCDAB ABCDABCDABDE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ABCDABD&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;First, we make comparation one by one. &lt;code&gt;B&lt;/code&gt; and &lt;code&gt;A&lt;/code&gt; not match, we slide key one byte  backward.&lt;/p&gt;
     
     </summary>
@@ -59,11 +58,9 @@
     <summary type="html">
     
       &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See solutions on &lt;a href=&quot;https://github.com/MolinDeng/Leetcode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My LeetCode&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-two-sum&quot;&gt;1. Two Sum&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&quot;1-Two-Sum&quot;&gt;&lt;a href=&quot;#1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;1. Two Sum&quot;&gt;&lt;/a&gt;1. Two Sum&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;BF with binary search&lt;/li&gt;
-&lt;li&gt;哈希表&lt;code&gt;T = O(N) S = O(N)&lt;/code&gt;
-&lt;ul&gt;
+&lt;li&gt;哈希表&lt;code&gt;T = O(N) S = O(N)&lt;/code&gt;&lt;ul&gt;
 &lt;li&gt;建立&lt;code&gt;value-index&lt;/code&gt;映射&lt;/li&gt;
 &lt;li&gt;依次遍历，如果&lt;code&gt;另一半&lt;/code&gt;在map中，返回当前下标&lt;code&gt;i&lt;/code&gt;和&lt;code&gt;map[另一半]&lt;/code&gt;；反之将当前&lt;code&gt;&amp;lt;value, index&amp;gt;&lt;/code&gt;插入map&lt;/li&gt;
 &lt;/ul&gt;
@@ -94,29 +91,22 @@
     
       &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See Solutions on &lt;a href=&quot;https://github.com/MolinDeng/PAT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My PAT&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2018.9.8 PAT A Level &lt;img src=&quot;https://i.imgur.com/pxvdpLr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1001-字符串处理&quot;&gt;1001(字符串处理)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;string operation using insert&lt;/p&gt;
+&lt;h2 id=&quot;1001-字符串处理&quot;&gt;&lt;a href=&quot;#1001-字符串处理&quot; class=&quot;headerlink&quot; title=&quot;1001(字符串处理)&quot;&gt;&lt;/a&gt;1001(字符串处理)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;string operation using insert&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert function cannot accept &lt;em&gt;reverse_iterator&lt;/em&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;insert function cannot accept &lt;em&gt;reverse_iterator&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;reverse the whole string, then do it as normal&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;reverse the whole string, then do it as normal &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;convert &lt;em&gt;reverse_it&lt;/em&gt; to &lt;em&gt;it&lt;/em&gt; (&lt;strong&gt;&lt;em&gt;not try, maybe not work&lt;/em&gt;&lt;/strong&gt;)&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;convert &lt;em&gt;reverse_it&lt;/em&gt; to &lt;em&gt;it&lt;/em&gt; (&lt;strong&gt;&lt;em&gt;not try, maybe not work&lt;/em&gt;&lt;/strong&gt;)&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;str.insert(r_iter.base(), &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;for each iteration, we should update iterator&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;for each iteration, we should update iterator&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;iter = str.insert(iter, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.cplusplus.com/reference/string/string/insert/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cplusplus.com/reference/string/string/insert/&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.cplusplus.com/reference/string/string/insert/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cplusplus.com/reference/string/string/insert/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
     
@@ -171,8 +161,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
-&lt;ul&gt;
+      &lt;h2 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;1个空格：&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;字体、字号、颜色：&lt;code&gt;&amp;lt;font face=&amp;quot;Charmonman&amp;quot; size= 2 color=blue&amp;gt;something&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;2&quot; color=&quot;blue&quot;&gt;test&lt;/font&gt;&lt;/li&gt;
 &lt;li&gt;段内换行：&lt;code&gt;&amp;lt;br\&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -202,9 +191,7 @@
     <summary type="html">
     
       &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;
-&lt;h3 id=&quot;create-a-new-post&quot;&gt;Create a new post&lt;/h3&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
     
     </summary>
