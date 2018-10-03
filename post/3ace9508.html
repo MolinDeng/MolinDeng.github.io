@@ -556,10 +556,10 @@
 <a id="more"></a>
 <h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ul>
 <li><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm config set registry https://registry.npm.taobao.org # change source</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org <span class="comment"># change source</span></span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo-cli</span><br><span class="line"><span class="meta">$</span> cd Blogs/ # your own file folder</span><br><span class="line"><span class="meta">$</span> hexo init # initialize</span><br><span class="line"><span class="meta">$</span> hexo install # or npm install</span><br><span class="line"><span class="meta">#</span> then u can generate an example</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g hexo-cli</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> Blogs/ <span class="comment"># your own file folder</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init <span class="comment"># initialize</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo install <span class="comment"># or npm install</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="keyword">then</span> u can generate an example</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>常用命令见<a href="http://www.molin7.top/post/d41a18cb.html" target="_blank" rel="noopener">Cheating Sheet</a></li>
 </ul>
@@ -586,13 +586,13 @@
 <li><p>设置SSH，详情参考<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000" target="_blank" rel="noopener">廖雪峰的GIt教程</a></p>
 </li>
 <li><p>安装git-deploy插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-deployer-git -–save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git -–save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>关联仓库：编辑<code>_config.yml</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>部署</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g -d</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo g -d</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="Binding-your-Domain-name"><a href="#Binding-your-Domain-name" class="headerlink" title="Binding your Domain name"></a>Binding your Domain name</h2><ul>
@@ -601,7 +601,7 @@
 <li><p>等待实名认证</p>
 </li>
 <li><p>解析域名</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ping &lt;usrename&gt;.github.io # get ip addr</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ping &lt;usrename&gt;.github.io <span class="comment"># get ip addr</span></span></span><br></pre></td></tr></table></figure>
 <p>配置如下2条</p>
 <ul>
 <li>记录类型<code>A</code>主机记录<code>@</code>记录值<code>ip-addr</code></li>
@@ -621,7 +621,7 @@
 </ul>
 </li>
 <li><p>添加tag页面</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new page tags</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new page tags</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>编辑<code>source/tags/index.md</code></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">type: "tags"</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
@@ -640,28 +640,28 @@
 <li><p>显示文章更新时间、创建时间以及其他总结信息</p>
 <ul>
 <li><p>编辑<code>themes/next/_config.yml</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Post meta display settings</span><br><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">    enabled: true</span><br><span class="line">    another_day: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Post meta display settings</span></span><br><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">    enabled: true</span><br><span class="line">    another_day: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>显示文章统计信息</p>
 <ul>
 <li><p>编辑<code>themes/next/_config.yml</code>注意注释中的依赖</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Post wordcount display settings</span><br><span class="line"><span class="meta">#</span> Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Post wordcount display settings</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>代码块复制按钮、高亮</p>
 <ul>
 <li><p>编辑<code>themes/next/_config.yml</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Add copy button on codeblock</span><br><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br><span class="line">...</span><br><span class="line"><span class="meta">#</span> Code Highlight theme</span><br><span class="line"><span class="meta">#</span> Available values: normal | night | night eighties | night blue | night bright</span><br><span class="line"><span class="meta">#</span> https://github.com/chriskempson/tomorrow-theme</span><br><span class="line">highlight_theme: night eighties</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Add copy button on codeblock</span></span><br><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br><span class="line">...</span><br><span class="line"><span class="meta">#</span><span class="bash"> Code Highlight theme</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Available values: normal | night | night eighties | night blue | night bright</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line">highlight_theme: night eighties</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>打赏信息</p>
 <ul>
 <li><p>编辑<code>themes/next/_config.yml</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Reward</span><br><span class="line">reward_comment: You can buy me some snacks🍕🌭 ^_^</span><br><span class="line">wechatpay: /images/wechatpay.jpg</span><br><span class="line">alipay: /images/alipay.jpg</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Reward</span></span><br><span class="line">reward_comment: You can buy me some snacks🍕🌭 ^_^</span><br><span class="line">wechatpay: /images/wechatpay.jpg</span><br><span class="line">alipay: /images/alipay.jpg</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -687,14 +687,14 @@
 </li>
 <li><p>生成livere_uid：在<code>Code Managing</code>中复制如下代码到配置文件中<code>themes/next/_config.yml</code></p>
 <p><img src="https://i.imgur.com/Z3kCidj.png" alt=""></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Support for LiveRe comments system.</span><br><span class="line"><span class="meta">#</span> You can get your uid from https://livere.com/insight/myCode (General web site)</span><br><span class="line">livere_uid: **********************==</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Support <span class="keyword">for</span> LiveRe comments system.</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> You can get your uid from https://livere.com/insight/myCode (General web site)</span></span><br><span class="line">livere_uid: **********************==</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>本地关键词搜索</p>
 <ul>
 <li><p>安装hexo-generator-searchdb 插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-searchdb --save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编辑<code>_config.yml</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
@@ -732,7 +732,7 @@
 <li><p>添加sitemap插件</p>
 <ul>
 <li><p>安装 hexo-generator-sitemap 插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-sitemap --save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编辑 <code>_config.yml</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure>
@@ -749,7 +749,7 @@
 <li><p>设置RSS</p>
 <ul>
 <li><p>安装hexo-generator-feed 插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-feed --save</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编辑 <code>_config.yml</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20 # Maximum number of posts in the feed (Use 0 or false to show all posts)</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br></pre></td></tr></table></figure>

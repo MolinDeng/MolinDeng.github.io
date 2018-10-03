@@ -178,7 +178,7 @@
 <meta property="og:description" content="Here’s a string “BBC ABCDAB ABCDABCDABDE”，I wanna know，if it contains another string “ABCDABD”.We call “ABCDABD”  search string or key, the other is source string Knuth-Morris-Pratt算法123BBC ABCDAB ABC">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.imgur.com/OIhGOjW.png">
-<meta property="og:updated_time" content="2018-10-03T09:14:49.288Z">
+<meta property="og:updated_time" content="2018-10-03T11:41:49.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串匹配算法--KMP&amp;Sunday">
 <meta name="twitter:description" content="Here’s a string “BBC ABCDAB ABCDABCDABDE”，I wanna know，if it contains another string “ABCDABD”.We call “ABCDABD”  search string or key, the other is source string Knuth-Morris-Pratt算法123BBC ABCDAB ABC">
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="Created: 2018-10-03 14:59:05 / Modified: 17:14:49" itemprop="dateCreated datePublished" datetime="2018-10-03T14:59:05+08:00">2018-10-03</time>
+              <time title="Created: 2018-10-03 14:59:05 / Modified: 19:41:49" itemprop="dateCreated datePublished" datetime="2018-10-03T14:59:05+08:00">2018-10-03</time>
             
 
             
@@ -637,12 +637,12 @@
 </tbody>
 </table>
 </div>
-<p>当<code>D</code>和<code>`不匹配时，已匹配的子串&quot;ABCDAB&quot;的部分匹配值是</code>2<code>，那么search key向后移动</code>4`位</p>
+<p>当<code>D</code>和<code>_</code>不匹配时，已匹配的子串”ABCDAB”的部分匹配值是<code>2</code>，那么search key向后移动<code>4</code>位</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">移动位数 = 已匹配的字符数 - 对应的部分匹配值 // 4 = 6 - 2</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">          |</span><br><span class="line">        ABCDABD</span><br></pre></td></tr></table></figure>
-<p>此时<code>C</code>与<code>`不匹配，search key向后移动</code>2-0=2`位</p>
+<p>此时<code>C</code>与<code>_</code>不匹配，search key向后移动<code>2-0=2</code>位</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">          |</span><br><span class="line">          ABCDABD</span><br></pre></td></tr></table></figure>
-<p>因为<code>`与</code>A`不匹配，继续后移一位。</p>
+<p>因为<code>_</code>与<code>A</code>不匹配，继续后移一位。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BBC ABCDAB ABCDABCDABDE</span><br><span class="line">           |</span><br><span class="line">           ABCDABD</span><br></pre></td></tr></table></figure>
 <p>以此类推~</p>
 <h3 id="计算PMT"><a href="#计算PMT" class="headerlink" title="计算PMT"></a>计算PMT</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makenxt</span><span class="params">(<span class="built_in">string</span>&amp; P, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nxt)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len = P.length();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, l = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span>(l &gt; <span class="number">0</span> &amp;&amp; P[l] != P[i])</span><br><span class="line">            l = nxt[l<span class="number">-1</span>];</span><br><span class="line">        <span class="keyword">if</span>(P[l] == P[i]) l++;</span><br><span class="line">        nxt[i] = l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
