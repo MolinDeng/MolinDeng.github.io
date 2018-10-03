@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://molindeng.github.io/"/>
-  <updated>2018-10-03T06:00:15.392Z</updated>
+  <updated>2018-10-03T09:07:52.286Z</updated>
   <id>https://molindeng.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字符串匹配算法--KMP&amp;Sunday</title>
+    <link href="https://molindeng.github.io/post/85e77adc.html"/>
+    <id>https://molindeng.github.io/post/85e77adc.html</id>
+    <published>2018-10-03T06:59:05.000Z</published>
+    <updated>2018-10-03T09:07:52.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Here’s a string “BBC ABCDAB ABCDABCDABDE”，I wanna know，if it contains another string “ABCDABD”.&amp;lt;/br&amp;gt;We call “ABCDABD”  &lt;code&gt;search string&lt;/code&gt; or &lt;code&gt;key&lt;/code&gt;, the other is &lt;code&gt;source string&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Knuth-Morris-Pratt算法&quot;&gt;&lt;a href=&quot;#Knuth-Morris-Pratt算法&quot; class=&quot;headerlink&quot; title=&quot;Knuth-Morris-Pratt算法&quot;&gt;&lt;/a&gt;Knuth-Morris-Pratt算法&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;BBC ABCDAB ABCDABCDABDE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ABCDABD&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;First, we make comparation one by one. &lt;code&gt;B&lt;/code&gt; and &lt;code&gt;A&lt;/code&gt; not match, we slide key one byte  backward.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://molindeng.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+      <category term="kmp" scheme="https://molindeng.github.io/tags/kmp/"/>
+    
+      <category term="sunday" scheme="https://molindeng.github.io/tags/sunday/"/>
+    
+      <category term="string" scheme="https://molindeng.github.io/tags/string/"/>
+    
+      <category term="match" scheme="https://molindeng.github.io/tags/match/"/>
+    
+      <category term="next" scheme="https://molindeng.github.io/tags/next/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode-OJ</title>
@@ -40,11 +72,11 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
+      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
+    
       <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
-    
-      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
     
   </entry>
   
@@ -59,29 +91,22 @@
     
       &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;blue&quot;&gt;Everyday programing !&lt;/font&gt; See Solutions on &lt;a href=&quot;https://github.com/MolinDeng/PAT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My PAT&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2018.9.8 PAT A Level &lt;img src=&quot;https://i.imgur.com/pxvdpLr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1001-字符串处理&quot;&gt;1001(字符串处理)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;string operation using insert&lt;/p&gt;
+&lt;h2 id=&quot;1001-字符串处理&quot;&gt;&lt;a href=&quot;#1001-字符串处理&quot; class=&quot;headerlink&quot; title=&quot;1001(字符串处理)&quot;&gt;&lt;/a&gt;1001(字符串处理)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;string operation using insert&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert function cannot accept &lt;em&gt;reverse_iterator&lt;/em&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;insert function cannot accept &lt;em&gt;reverse_iterator&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;reverse the whole string, then do it as normal&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;reverse the whole string, then do it as normal &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;convert &lt;em&gt;reverse_it&lt;/em&gt; to &lt;em&gt;it&lt;/em&gt; (&lt;strong&gt;&lt;em&gt;not try, maybe not work&lt;/em&gt;&lt;/strong&gt;)&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;convert &lt;em&gt;reverse_it&lt;/em&gt; to &lt;em&gt;it&lt;/em&gt; (&lt;strong&gt;&lt;em&gt;not try, maybe not work&lt;/em&gt;&lt;/strong&gt;)&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;str.insert(r_iter.base(), &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;for each iteration, we should update iterator&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;for each iteration, we should update iterator&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;iter = str.insert(iter, &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.cplusplus.com/reference/string/string/insert/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cplusplus.com/reference/string/string/insert/&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.cplusplus.com/reference/string/string/insert/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.cplusplus.com/reference/string/string/insert/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
     
@@ -90,13 +115,13 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
-      <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
-    
-      <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
-    
       <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+      <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
+    
+      <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
     
   </entry>
   
@@ -132,7 +157,7 @@
     <link href="https://molindeng.github.io/post/d41a18cb.html"/>
     <id>https://molindeng.github.io/post/d41a18cb.html</id>
     <published>2018-10-01T13:47:44.000Z</published>
-    <updated>2018-10-01T15:22:33.707Z</updated>
+    <updated>2018-10-03T08:45:20.158Z</updated>
     
     <summary type="html">
     
