@@ -684,7 +684,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.6k</span>
+                <span title="Symbols count in article">2.7k</span>
               
 
               
@@ -720,9 +720,11 @@
       
         
           <p><font face="Charmonman" size="3" color="blue">Everyday programing !</font> See solutions on <a href="https://github.com/MolinDeng/Leetcode" target="_blank" rel="noopener">My LeetCode</a></p>
-<h3 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="1. Two Sum"></a>1. Two Sum</h3><ul>
+<h3 id="1-two-sum">1. Two Sum</h3>
+<ul>
 <li>BF with binary search</li>
-<li>哈希表<code>T = O(N) S = O(N)</code><ul>
+<li>哈希表<code>T = O(N) S = O(N)</code>
+<ul>
 <li>建立<code>value-index</code>映射</li>
 <li>依次遍历，如果<code>另一半</code>在map中，返回当前下标<code>i</code>和<code>map[另一半]</code>；反之将当前<code>&lt;value, index&gt;</code>插入map</li>
 </ul>
@@ -882,7 +884,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">859</span>
+                <span title="Symbols count in article">19k</span>
               
 
               
@@ -896,7 +898,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">18 mins.</span>
               
             </div>
           
@@ -919,22 +921,29 @@
         
           <p><font face="Charmonman" size="3" color="blue">Everyday programing !</font> See Solutions on <a href="https://github.com/MolinDeng/PAT" target="_blank" rel="noopener">My PAT</a></p>
 <p>2018.9.8 PAT A Level <img src="https://i.imgur.com/pxvdpLr.png" alt=""></p>
-<h2 id="1001-字符串处理"><a href="#1001-字符串处理" class="headerlink" title="1001(字符串处理)"></a>1001(字符串处理)</h2><ul>
-<li><p>string operation using insert</p>
-</li>
-<li><p>insert function cannot accept <em>reverse_iterator</em></p>
+<h2 id="1001-字符串处理">1001(字符串处理)</h2>
 <ul>
-<li><p>reverse the whole string, then do it as normal </p>
+<li>
+<p>string operation using insert</p>
 </li>
-<li><p>convert <em>reverse_it</em> to <em>it</em> (<strong><em>not try, maybe not work</em></strong>)</p>
+<li>
+<p>insert function cannot accept <em>reverse_iterator</em></p>
+<ul>
+<li>
+<p>reverse the whole string, then do it as normal</p>
+</li>
+<li>
+<p>convert <em>reverse_it</em> to <em>it</em> (<strong><em>not try, maybe not work</em></strong>)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.insert(r_iter.base(), <span class="number">1</span>, <span class="string">','</span>);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-<li><p>for each iteration, we should update iterator</p>
+<li>
+<p>for each iteration, we should update iterator</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iter = str.insert(iter, <span class="string">','</span>);</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><a href="http://www.cplusplus.com/reference/string/string/insert/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/string/string/insert/</a></p>
+<li>
+<p><a href="http://www.cplusplus.com/reference/string/string/insert/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/string/string/insert/</a></p>
 </li>
 </ul>
           <!--noindex-->
@@ -1518,7 +1527,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">431</span>
+                <span title="Symbols count in article">436</span>
               
 
               
@@ -1554,7 +1563,9 @@
       
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
           <!--noindex-->
           <div class="post-button text-center">
