@@ -75,11 +75,11 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
+      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
+    
       <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
-    
-      <category term="leetcode" scheme="https://molindeng.github.io/tags/leetcode/"/>
     
   </entry>
   
@@ -125,13 +125,13 @@
       <category term="OJ" scheme="https://molindeng.github.io/categories/OJ/"/>
     
     
-      <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
-    
-      <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
-    
       <category term="OJ" scheme="https://molindeng.github.io/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molindeng.github.io/tags/algorithm/"/>
+    
+      <category term="PAT" scheme="https://molindeng.github.io/tags/PAT/"/>
+    
+      <category term="ZJU-PAT" scheme="https://molindeng.github.io/tags/ZJU-PAT/"/>
     
   </entry>
   
