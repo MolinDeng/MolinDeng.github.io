@@ -13,5 +13,5 @@ Allow: /images/
 Allow: /js/
 Allow: /lib/
 
-Sitemap: https://molin7.top/sitemap.xml
-Sitemap: https://molin7.top/baidusitemap.xml
+Sitemap: https://blog.molin7.top/sitemap.xml
+Sitemap: https://blog.molin7.top/baidusitemap.xml
