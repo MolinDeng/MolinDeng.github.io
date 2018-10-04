@@ -103,11 +103,11 @@
       <category term="OJ" scheme="https://molin7.top/categories/OJ/"/>
     
     
+      <category term="leetcode" scheme="https://molin7.top/tags/leetcode/"/>
+    
       <category term="OJ" scheme="https://molin7.top/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molin7.top/tags/algorithm/"/>
-    
-      <category term="leetcode" scheme="https://molin7.top/tags/leetcode/"/>
     
   </entry>
   
@@ -153,13 +153,13 @@
       <category term="OJ" scheme="https://molin7.top/categories/OJ/"/>
     
     
-      <category term="PAT" scheme="https://molin7.top/tags/PAT/"/>
-    
-      <category term="ZJU-PAT" scheme="https://molin7.top/tags/ZJU-PAT/"/>
-    
       <category term="OJ" scheme="https://molin7.top/tags/OJ/"/>
     
       <category term="algorithm" scheme="https://molin7.top/tags/algorithm/"/>
+    
+      <category term="PAT" scheme="https://molin7.top/tags/PAT/"/>
+    
+      <category term="ZJU-PAT" scheme="https://molin7.top/tags/ZJU-PAT/"/>
     
   </entry>
   
