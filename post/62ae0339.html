@@ -169,13 +169,13 @@
 
 
 
-  <meta name="description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理)   string operation using insert   insert function cannot accept reverse_iterator   reverse the whole string, then do it">
-<meta name="keywords" content="PAT,ZJU-PAT,OJ,algorithm">
+  <meta name="description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理) string operation using insert  insert function cannot accept reverse_iterator  reverse the whole string, then do it as n">
+<meta name="keywords" content="OJ,algorithm,PAT,ZJU-PAT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PAT-Advanced-Level">
 <meta property="og:url" content="https://molindeng.github.io/post/62ae0339.html">
 <meta property="og:site_name" content="Morning&#39;s blog">
-<meta property="og:description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理)   string operation using insert   insert function cannot accept reverse_iterator   reverse the whole string, then do it">
+<meta property="og:description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理) string operation using insert  insert function cannot accept reverse_iterator  reverse the whole string, then do it as n">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://i.imgur.com/pxvdpLr.png">
 <meta property="og:image" content="https://i.imgur.com/h6tBukd.png">
@@ -185,7 +185,7 @@
 <meta property="og:updated_time" content="2018-10-03T12:14:10.732Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PAT-Advanced-Level">
-<meta name="twitter:description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理)   string operation using insert   insert function cannot accept reverse_iterator   reverse the whole string, then do it">
+<meta name="twitter:description" content="Everyday programing ! See Solutions on My PAT 2018.9.8 PAT A Level  1001(字符串处理) string operation using insert  insert function cannot accept reverse_iterator  reverse the whole string, then do it as n">
 <meta name="twitter:image" content="https://i.imgur.com/pxvdpLr.png">
 
 
@@ -505,7 +505,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">19k</span>
+                <span title="Symbols count in article">859</span>
               
 
               
@@ -519,7 +519,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">18 mins.</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -541,304 +541,228 @@
       
         <p><font face="Charmonman" size="3" color="#0099ff">Everyday programing !</font> See Solutions on <a href="https://github.com/MolinDeng/PAT" target="_blank" rel="noopener">My PAT</a></p>
 <p>2018.9.8 PAT A Level <img src="https://i.imgur.com/pxvdpLr.png" alt=""></p>
-<h2 id="1001-字符串处理">1001(字符串处理)</h2>
-<ul>
-<li>
-<p>string operation using insert</p>
+<h2 id="1001-字符串处理"><a href="#1001-字符串处理" class="headerlink" title="1001(字符串处理)"></a>1001(字符串处理)</h2><ul>
+<li><p>string operation using insert</p>
 </li>
-<li>
-<p>insert function cannot accept <em>reverse_iterator</em></p>
+<li><p>insert function cannot accept <em>reverse_iterator</em></p>
 <ul>
-<li>
-<p>reverse the whole string, then do it as normal</p>
+<li><p>reverse the whole string, then do it as normal </p>
 </li>
-<li>
-<p>convert <em>reverse_it</em> to <em>it</em> (<strong><em>not try, maybe not work</em></strong>)</p>
+<li><p>convert <em>reverse_it</em> to <em>it</em> (<strong><em>not try, maybe not work</em></strong>)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.insert(r_iter.base(), <span class="number">1</span>, <span class="string">','</span>);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-<li>
-<p>for each iteration, we should update iterator</p>
+<li><p>for each iteration, we should update iterator</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iter = str.insert(iter, <span class="string">','</span>);</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p><a href="http://www.cplusplus.com/reference/string/string/insert/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/string/string/insert/</a></p>
+<li><p><a href="http://www.cplusplus.com/reference/string/string/insert/" target="_blank" rel="noopener">http://www.cplusplus.com/reference/string/string/insert/</a></p>
 </li>
 </ul>
 <a id="more"></a>
-<h2 id="1002-两路merge">1002(两路merge)</h2>
-<ul>
+<h2 id="1002-两路merge"><a href="#1002-两路merge" class="headerlink" title="1002(两路merge)"></a>1002(两路merge)</h2><ul>
 <li>two-way merge</li>
 </ul>
-<h2 id="1003-dijkstra算法-点带权">1003(Dijkstra算法 点带权)</h2>
+<h2 id="1003-Dijkstra算法-点带权"><a href="#1003-Dijkstra算法-点带权" class="headerlink" title="1003(Dijkstra算法 点带权)"></a>1003(Dijkstra算法 点带权)</h2><ul>
+<li><p>my code using priority queue 22/25</p>
+</li>
+<li><p>using Dij Algorithm to find shortest path</p>
+</li>
+<li><p>using priority queue to find vertex to visit</p>
 <ul>
-<li>
-<p>my code using priority queue 22/25</p>
+<li><p>before push into queue, we need to find if the id in queue</p>
 </li>
-<li>
-<p>using Dij Algorithm to find shortest path</p>
-</li>
-<li>
-<p>using priority queue to find vertex to visit</p>
-<ul>
-<li>
-<p>before push into queue, we need to find if the id in queue</p>
-</li>
-<li>
-<p>self-defined cmp function for determining priority</p>
+<li><p>self-defined cmp function for determining priority</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">mycmp</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> s_dist[i] &gt; s_dist[j];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-<li>
-<p>using vector&lt;vector&lt;int&gt;&gt;  store path</p>
+<li><p>using vector<vector<int\>&gt;  store path</vector<int\></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(s_dist[curr] + dist[curr][i] &lt; s_dist[i]) &#123;</span><br><span class="line">    s_dist[i] = s_dist[curr] + dist[curr][i];</span><br><span class="line">    team_cnt[i] = team_cnt[curr] + teams[i];</span><br><span class="line">    path_cnt[i] = path_cnt[curr];</span><br><span class="line">    path[i].clear();</span><br><span class="line">    path[i].push_back(curr);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(s_dist[curr] + dist[curr][i] == s_dist[i]) &#123;</span><br><span class="line">    <span class="keyword">if</span>(team_cnt[i] &lt; teams[i] + team_cnt[curr])</span><br><span class="line">      	team_cnt[i] = teams[i] + team_cnt[curr];</span><br><span class="line">    path_cnt[i] += path_cnt[curr];</span><br><span class="line">    path[i].push_back(curr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1004-dfs-bfs-层序遍历">1004(DFS, BFS, 层序遍历)</h2>
+<h2 id="1004-DFS-BFS-层序遍历"><a href="#1004-DFS-BFS-层序遍历" class="headerlink" title="1004(DFS, BFS, 层序遍历)"></a>1004(DFS, BFS, 层序遍历)</h2><ul>
+<li><p>simple DFS</p>
+</li>
+<li><p>using map to represent tree</p>
+</li>
+<li><p>Idea from <a href="https://blog.csdn.net/iaccepted/article/details/21289205" target="_blank" rel="noopener">https://blog.csdn.net/iaccepted/article/details/21289205</a></p>
+</li>
+<li><p>can be done by BFS</p>
 <ul>
-<li>
-<p>simple DFS</p>
-</li>
-<li>
-<p>using map to represent tree</p>
-</li>
-<li>
-<p>Idea from <a href="https://blog.csdn.net/iaccepted/article/details/21289205" target="_blank" rel="noopener">https://blog.csdn.net/iaccepted/article/details/21289205</a></p>
-</li>
-<li>
-<p>can be done by BFS</p>
-<ul>
-<li>
-<p>need to record level info. when input</p>
+<li><p>need to record level info. when input</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">level[sid] = level[id] + <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="1005-字符串处理">1005(字符串处理)</h2>
-<ul>
+<h2 id="1005-字符串处理"><a href="#1005-字符串处理" class="headerlink" title="1005(字符串处理)"></a>1005(字符串处理)</h2><ul>
 <li>string operation</li>
 </ul>
-<h2 id="1006-模拟-优先队列应用">1006(模拟，优先队列应用)</h2>
-<ul>
+<h2 id="1006-模拟，优先队列应用"><a href="#1006-模拟，优先队列应用" class="headerlink" title="1006(模拟，优先队列应用)"></a>1006(模拟，优先队列应用)</h2><ul>
 <li>using map&amp;priority_queue</li>
 <li>加速方法：将id映射成独立的数字id，存入结构体数组，通过直接的数组访问与比较加速</li>
 </ul>
-<h2 id="1007-最大连续子序列之和">1007(最大连续子序列之和)</h2>
-<ul>
-<li>
-<p>online algorithm O(N)</p>
+<h2 id="1007-最大连续子序列之和"><a href="#1007-最大连续子序列之和" class="headerlink" title="1007(最大连续子序列之和)"></a>1007(最大连续子序列之和)</h2><ul>
+<li><p>online algorithm O(N)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(curr_sum &gt; max_sum || (curr_sum == <span class="number">0</span> &amp;&amp; end == N - <span class="number">1</span>)) &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p><strong>curr_sum == 0 &amp;&amp; end == N - 1</strong> is very important, for input as below:</p>
+<li><p><strong>curr_sum == 0 &amp;&amp; end == N - 1</strong> is very important, for input as below:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>6</span><br><span class="line"><span class="meta">&gt;</span>0 0 0 0 -1 0</span><br></pre></td></tr></table></figure>
 <p>If this condition is omitted, the <em>end</em> is 5(that is N -1), which is incorrect.</p>
 </li>
-<li>
-<p>v2中调整了两个判断的顺序，思路简单了许多，关键点在于将maxSum初始化为负数，这样一来，+0也可以得到记录，输出时判断正负即可</p>
+<li><p>v2中调整了两个判断的顺序，思路简单了许多，关键点在于将maxSum初始化为负数，这样一来，+0也可以得到记录，输出时判断正负即可</p>
 </li>
 </ul>
-<h2 id="1008-数学问题">1008(数学问题)</h2>
-<ul>
+<h2 id="1008-数学问题"><a href="#1008-数学问题" class="headerlink" title="1008(数学问题)"></a>1008(数学问题)</h2><ul>
 <li>simple</li>
 </ul>
-<h2 id="1009-模拟-map应用">1009(模拟，map应用)</h2>
-<ul>
+<h2 id="1009-模拟，map应用"><a href="#1009-模拟，map应用" class="headerlink" title="1009(模拟，map应用)"></a>1009(模拟，map应用)</h2><ul>
 <li>using map</li>
 </ul>
-<h2 id="1010-二分法">1010(二分法)</h2>
-<ul>
-<li>
-<p>simple <strong><em>for</em></strong> iteration cannot pass test point 7(large sum and out of time)</p>
+<h2 id="1010-二分法"><a href="#1010-二分法" class="headerlink" title="1010(二分法)"></a>1010(二分法)</h2><ul>
+<li><p>simple <strong><em>for</em></strong> iteration cannot pass test point 7(large sum and out of time)</p>
 </li>
-<li>
-<p>binary search must consider N2_d &lt; 0</p>
+<li><p>binary search must consider N2_d &lt; 0</p>
 <p>This situation happens when N1_d is very large, when computing N2_d, N2_d may exceeding the upper bound and become negative.(e.g. <strong><em>right</em></strong> is super large , so <strong><em>mid</em></strong> is also super large, calculate <strong><em>pow()</em></strong> can be super super large)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(N2_d &gt; N1_d || N2_d &lt; <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(N2_d &gt; N1_d || N2_d &lt; <span class="number">0</span>) right = mid - <span class="number">1</span>;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>idea from <a href="https://www.cnblogs.com/weedboy/p/7244819.html" target="_blank" rel="noopener">https://www.cnblogs.com/weedboy/p/7244819.html</a></p>
+<li><p>idea from <a href="https://www.cnblogs.com/weedboy/p/7244819.html" target="_blank" rel="noopener">https://www.cnblogs.com/weedboy/p/7244819.html</a></p>
 </li>
-<li>
-<p><strong><u>还有一个非常重要重要地方</u></strong></p>
+<li><p><strong><u>还有一个非常重要重要地方</u></strong></p>
 <ul>
 <li>判断N2_d &lt; 0（溢出）一定要在判断N2_d &lt; N1_d前，不然误以为小于，其实是溢出造成的大于</li>
 </ul>
 </li>
 </ul>
-<h2 id="1011-查找元素-优先队列应用">1011(查找元素，优先队列应用)</h2>
-<ul>
+<h2 id="1011-查找元素，优先队列应用"><a href="#1011-查找元素，优先队列应用" class="headerlink" title="1011(查找元素，优先队列应用)"></a>1011(查找元素，优先队列应用)</h2><ul>
 <li>priority queue</li>
 </ul>
-<h2 id="1012-排序">1012(排序)</h2>
-<ul>
+<h2 id="1012-排序"><a href="#1012-排序" class="headerlink" title="1012(排序)"></a>1012(排序)</h2><ul>
 <li>sort grades rather than sort ID</li>
 <li>88 87 87 55，the rank is 1,2,2,4</li>
 </ul>
-<h2 id="1013-图的遍历-dfs统计连通分量的个数">1013(图的遍历，DFS统计连通分量的个数)</h2>
-<ul>
+<h2 id="1013-图的遍历，DFS统计连通分量的个数"><a href="#1013-图的遍历，DFS统计连通分量的个数" class="headerlink" title="1013(图的遍历，DFS统计连通分量的个数)"></a>1013(图的遍历，DFS统计连通分量的个数)</h2><ul>
 <li>Find the # of sub-connected component连通分量的个数</li>
 <li>DFS or BFS</li>
 <li>不能用并查集，这是实际连接，不是虚拟连接</li>
 </ul>
-<h2 id="1014-queue应用-模拟">1014(queue应用，模拟)</h2>
-<ul>
+<h2 id="1014-queue应用，模拟"><a href="#1014-queue应用，模拟" class="headerlink" title="1014(queue应用，模拟)"></a>1014(queue应用，模拟)</h2><ul>
 <li>defining a good data structure is vital important.</li>
 <li>这道模拟题中顾客是已经全部都在队列中的了</li>
 </ul>
-<h2 id="1015-素数-计算reverse-number">1015(素数，计算reverse number)</h2>
-<ul>
-<li>
-<p>is_prime</p>
+<h2 id="1015-素数，计算reverse-number"><a href="#1015-素数，计算reverse-number" class="headerlink" title="1015(素数，计算reverse number)"></a>1015(素数，计算reverse number)</h2><ul>
+<li><p>is_prime</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_prime</span><span class="params">(<span class="keyword">long</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x &lt; <span class="number">2</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(x == <span class="number">2</span> || x == <span class="number">3</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> i = <span class="number">2</span>; i*i &lt;= x; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>calculate reverse number</p>
+<li><p>calculate reverse number</p>
 </li>
 </ul>
-<h2 id="1016-排序">1016(排序)</h2>
-<ul>
+<h2 id="1016-排序"><a href="#1016-排序" class="headerlink" title="1016(排序)"></a>1016(排序)</h2><ul>
 <li>a good data structure</li>
 <li>understanding <strong><em>no two records for the same customer have the same time</em></strong>, 所以按时间排序后，offline时间和它正前方的online时间一定是一对</li>
 </ul>
-<h2 id="1017-queue的应用-模拟">1017(queue的应用，模拟)</h2>
-<ul>
+<h2 id="1017-queue的应用，模拟"><a href="#1017-queue的应用，模拟" class="headerlink" title="1017(queue的应用，模拟)"></a>1017(queue的应用，模拟)</h2><ul>
 <li>the same as 1014</li>
 </ul>
-<h2 id="1018-dijkstra-算法-dfs搜索最优路径-点带权-判定方法不同-多路径储存">1018(Dijkstra 算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存)</h2>
-<ul>
+<h2 id="1018-Dijkstra-算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存"><a href="#1018-Dijkstra-算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存" class="headerlink" title="1018(Dijkstra 算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存)"></a>1018(Dijkstra 算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存)</h2><ul>
 <li>先得到所有路径，再DFS找到最优，因为不满足<strong>最优子结构</strong></li>
 </ul>
-<h2 id="1019-回文数-字符串处理">1019(回文数，字符串处理)</h2>
-<ul>
+<h2 id="1019-回文数，字符串处理"><a href="#1019-回文数，字符串处理" class="headerlink" title="1019(回文数，字符串处理)"></a>1019(回文数，字符串处理)</h2><ul>
 <li>simple</li>
 </ul>
-<h2 id="1020-树的遍历-之间的转换">1020(树的遍历，之间的转换)</h2>
-<ul>
+<h2 id="1020-树的遍历，之间的转换"><a href="#1020-树的遍历，之间的转换" class="headerlink" title="1020(树的遍历，之间的转换)"></a>1020(树的遍历，之间的转换)</h2><ul>
 <li>the relationship between three traversal order</li>
 <li>后续和中序构建层序</li>
 </ul>
-<h2 id="1021-图的遍历-dfs-计算连通分量的个数-disjoint-set">1021(图的遍历，DFS，计算连通分量的个数，Disjoint set)</h2>
-<ul>
-<li>
-<p>通过DFS和Disjoint set都可判断连通分量的个数</p>
+<h2 id="1021-图的遍历，DFS，计算连通分量的个数，Disjoint-set"><a href="#1021-图的遍历，DFS，计算连通分量的个数，Disjoint-set" class="headerlink" title="1021(图的遍历，DFS，计算连通分量的个数，Disjoint set)"></a>1021(图的遍历，DFS，计算连通分量的个数，Disjoint set)</h2><ul>
+<li><p>通过DFS和Disjoint set都可判断连通分量的个数</p>
 </li>
-<li>
-<p>而找到最深根有非常tricky的做法, 不用对每个节点DFS计算深度</p>
+<li><p>而找到最深根有非常tricky的做法, 不用对每个节点DFS计算深度</p>
 <blockquote>
-<p><strong>先从一个结点dfs后保留最高高度拥有的结点们，然后从这些结点中的其中任意一个开始dfs得到最高高度的结点们，这两个结点集合的并集就是所求</strong></p>
+<p><strong>先从一个结点dfs后保留最高高度拥有的结点们，然后从这些结点中的其中任意一个开始dfs得到最高高度的结点们，这两个结点集合的并集就是所求</strong> </p>
 </blockquote>
 </li>
-<li>
-<p>Idea from <a href="https://www.liuchuo.net/archives/2348" target="_blank" rel="noopener">https://www.liuchuo.net/archives/2348</a></p>
+<li><p>Idea from <a href="https://www.liuchuo.net/archives/2348" target="_blank" rel="noopener">https://www.liuchuo.net/archives/2348</a></p>
 </li>
-<li>
-<p>这其实是一个逆向思维，最深叶子就当然是最深的root</p>
+<li><p>这其实是一个逆向思维，最深叶子就当然是最深的root</p>
 </li>
 </ul>
-<h2 id="1022-map应用">1022(map应用)</h2>
-<ul>
+<h2 id="1022-map应用"><a href="#1022-map应用" class="headerlink" title="1022(map应用)"></a>1022(map应用)</h2><ul>
 <li>map的简单应用</li>
-<li>对于连续getline(cin, s)操作,s是string
-<ul>
+<li>对于连续getline(cin, s)操作,s是string<ul>
 <li>连续getline()操作之前一定要getchar()吃掉回车</li>
 <li>连续getline()操作之间没有其他输入输出则不用getchar()</li>
-<li>连续getline()操作之间有cout/printf输出'\n'，则不用getchar()</li>
+<li>连续getline()操作之间有cout/printf输出’\n’，则不用getchar()</li>
 </ul>
 </li>
 </ul>
-<h2 id="1023-大整数运算-字符串操作">1023(大整数运算，字符串操作)</h2>
-<ul>
-<li>
-<p>大整数运算，通过string以及字符操作来实现</p>
+<h2 id="1023-大整数运算，字符串操作"><a href="#1023-大整数运算，字符串操作" class="headerlink" title="1023(大整数运算，字符串操作)"></a>1023(大整数运算，字符串操作)</h2><ul>
+<li><p>大整数运算，通过string以及字符操作来实现</p>
 <ul>
 <li>最后的进位要考虑到</li>
 </ul>
 </li>
-<li>
-<p>判断方法tricky</p>
+<li><p>判断方法tricky</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sort(origin.begin(), origin.end());</span><br><span class="line">sort(res_copy.begin(), res_copy.end());</span><br><span class="line"><span class="keyword">if</span>(res_copy == origin) <span class="comment">//Yes</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1024-大整数运算-字符串实现">1024(大整数运算，字符串实现)</h2>
-<ul>
+<h2 id="1024-大整数运算，字符串实现"><a href="#1024-大整数运算，字符串实现" class="headerlink" title="1024(大整数运算，字符串实现)"></a>1024(大整数运算，字符串实现)</h2><ul>
 <li>大整数运算，通过string以及字符操作来实现</li>
 </ul>
-<h2 id="1025-排序">1025(排序)</h2>
-<ul>
+<h2 id="1025-排序"><a href="#1025-排序" class="headerlink" title="1025(排序)"></a>1025(排序)</h2><ul>
 <li>Test 3 timeout可能原因是使用map映射id和各种信息，红黑树查找需要时间，不如vector直接快</li>
 <li>直接定义结构体就好了</li>
 </ul>
-<h2 id="1026-模拟-queue应用-数据结构设计">1026(模拟，queue应用，数据结构设计)</h2>
-<ul>
+<h2 id="1026-模拟，queue应用，数据结构设计"><a href="#1026-模拟，queue应用，数据结构设计" class="headerlink" title="1026(模拟，queue应用，数据结构设计)"></a>1026(模拟，queue应用，数据结构设计)</h2><ul>
 <li>TODO: re-define data structure, and simulate the queueing</li>
 </ul>
-<h2 id="1027-进制转换">1027(进制转换)</h2>
-<ul>
+<h2 id="1027-进制转换"><a href="#1027-进制转换" class="headerlink" title="1027(进制转换)"></a>1027(进制转换)</h2><ul>
 <li>easy</li>
 </ul>
-<h2 id="1028-排序">1028(排序)</h2>
-<ul>
+<h2 id="1028-排序"><a href="#1028-排序" class="headerlink" title="1028(排序)"></a>1028(排序)</h2><ul>
 <li>scanf&amp;printf is faster</li>
 </ul>
-<h2 id="1029-排序-边读边排">1029(排序，边读边排)</h2>
-<ul>
+<h2 id="1029-排序，边读边排"><a href="#1029-排序，边读边排" class="headerlink" title="1029(排序，边读边排)"></a>1029(排序，边读边排)</h2><ul>
 <li>第一个队列存好后，把第二个队列边读，边和第一个队列比较，选择出队。这样可以不用一次存完第二个队列，解决超内存的问题.</li>
 <li>Idea from <a href="https://www.liuchuo.net/archives/2248" target="_blank" rel="noopener">https://www.liuchuo.net/archives/2248</a></li>
 <li><code>a.push(INT_MAX);b.push(INT_MAX);</code>保证了a、b不会为空</li>
 </ul>
-<h2 id="1030-dijkstra算法-dfs-最短路径-边带权">1030(Dijkstra算法 + DFS，最短路径，边带权)</h2>
-<ul>
-<li>vector&lt;int&gt; path储存前驱</li>
+<h2 id="1030-Dijkstra算法-DFS，最短路径，边带权"><a href="#1030-Dijkstra算法-DFS，最短路径，边带权" class="headerlink" title="1030(Dijkstra算法 + DFS，最短路径，边带权)"></a>1030(Dijkstra算法 + DFS，最短路径，边带权)</h2><ul>
+<li>vector\<int> path储存前驱</int></li>
 </ul>
-<h2 id="1031-字符串操作-数学问题">1031(字符串操作，数学问题)</h2>
-<ul>
-<li>$2x+y-2=N\to x = \frac{N+2-y}{2}$, 目的是为了$y-x$大于0且最小，$y-x=\frac{3y-N-2}{2}$只能等于$i,i\in{0,1,2,..}$，遍历i，解得y即可</li>
+<h2 id="1031-字符串操作，数学问题"><a href="#1031-字符串操作，数学问题" class="headerlink" title="1031(字符串操作，数学问题)"></a>1031(字符串操作，数学问题)</h2><ul>
+<li>$2x+y-2=N\to x = \frac{N+2-y}{2}$, 目的是为了$y-x$大于0且最小，$y-x=\frac{3y-N-2}{2}$只能等于$i,i\in\{0,1,2,..\}$，遍历i，解得y即可</li>
 </ul>
-<h2 id="1032-数组形式链表">1032(数组形式链表)</h2>
-<h2 id="1033-贪心">1033(贪心)</h2>
-<h2 id="1034-dfs-有向图遍历-map应用">1034(DFS，有向图遍历，map应用)</h2>
-<ul>
+<h2 id="1032-数组形式链表"><a href="#1032-数组形式链表" class="headerlink" title="1032(数组形式链表)"></a>1032(数组形式链表)</h2><h2 id="1033-贪心"><a href="#1033-贪心" class="headerlink" title="1033(贪心)"></a>1033(贪心)</h2><h2 id="1034-DFS，有向图遍历，map应用"><a href="#1034-DFS，有向图遍历，map应用" class="headerlink" title="1034(DFS，有向图遍历，map应用)"></a>1034(DFS，有向图遍历，map应用)</h2><ul>
 <li>内存有限，时间有限，给所有的id(string)分配连续的index下标，降低空间要求，同时数组操作更快</li>
 <li>DFS遍历有向图，实际上是遍历每条边，所以只有当该点为起点，并且没有访问过时，计入以他为起点的边。</li>
 </ul>
-<h2 id="1035-字符串操作">1035(字符串操作)</h2>
-<ul>
-<li>while((c = getchar()) != '\n')</li>
+<h2 id="1035-字符串操作"><a href="#1035-字符串操作" class="headerlink" title="1035(字符串操作)"></a>1035(字符串操作)</h2><ul>
+<li>while((c = getchar()) != ‘\n’)</li>
 </ul>
-<h2 id="1036-排序-查找">1036(排序、查找)</h2>
-<ul>
+<h2 id="1036-排序、查找"><a href="#1036-排序、查找" class="headerlink" title="1036(排序、查找)"></a>1036(排序、查找)</h2><ul>
 <li>online 边读边比较</li>
 </ul>
-<h2 id="1037-排序-求和">1037(排序，求和)</h2>
-<ul>
+<h2 id="1037-排序，求和"><a href="#1037-排序，求和" class="headerlink" title="1037(排序，求和)"></a>1037(排序，求和)</h2><ul>
 <li>忽略0</li>
 </ul>
-<h2 id="1038-贪心？字符串比较">1038(贪心？字符串比较)</h2>
-<ul>
+<h2 id="1038-贪心？字符串比较"><a href="#1038-贪心？字符串比较" class="headerlink" title="1038(贪心？字符串比较)"></a>1038(贪心？字符串比较)</h2><ul>
 <li>cmp: return a + b &lt; b + a</li>
 <li>满足最优子结构</li>
 </ul>
-<h2 id="1039-映射-大数据查找">1039(映射，大数据查找)</h2>
-<ul>
+<h2 id="1039-映射，大数据查找"><a href="#1039-映射，大数据查找" class="headerlink" title="1039(映射，大数据查找)"></a>1039(映射，大数据查找)</h2><ul>
 <li>简单map会超时，改用vector执行映射，首先要建立ID与下标的关系——getid()</li>
-<li>getid()中pow函数会降低效率...</li>
+<li>getid()中pow函数会降低效率…</li>
 </ul>
-<h2 id="1040-dp最长公共子串lc-substring">1040(DP最长公共子串LC-Substring)</h2>
-<ul>
-<li>
-<p>TODO：LC substring &amp; LC subsequence</p>
+<h2 id="1040-DP最长公共子串LC-Substring"><a href="#1040-DP最长公共子串LC-Substring" class="headerlink" title="1040(DP最长公共子串LC-Substring)"></a>1040(DP最长公共子串LC-Substring)</h2><ul>
+<li><p>TODO：LC substring &amp; LC subsequence</p>
 </li>
-<li>
-<p>转移方程</p>
+<li><p>转移方程</p>
 <p>$C[i][j] = C[i == 0?0:i-1][j ==0?0:j-1] + 1\quad when\quad s1[i]==s2[j]$</p>
 <p>$C[i][j] = 0\quad when \quad s1[i]\neq s2[j]$</p>
 </li>
-<li>
-<p>上述转移方程是错误的</p>
+<li><p>上述转移方程是错误的</p>
 <ul>
 <li>对于aacdefcaa，输出是aac</li>
 </ul>
@@ -846,79 +770,58 @@
 </ul>
 <p><strong>正确的DP</strong></p>
 <ul>
-<li>
-<p>给出一个字符串s，求s的最长回文字串的长度</p>
-</li>
-<li>
-<p><code>dp[i][j]</code>表示s[i]到s[j]所表示的字串是否是回文字串。只有0和1</p>
-</li>
-<li>
-<p>递推方程：</p>
+<li>给出一个字符串s，求s的最长回文字串的长度</li>
+<li><code>dp[i][j]</code>表示s[i]到s[j]所表示的字串是否是回文字串。只有0和1</li>
+<li><p>递推方程：</p>
 <ul>
-<li>
-<p>当s[i] == s[j] : <code>dp[i][j] = dp[i+1][j-1]</code></p>
+<li><p>当s[i] == s[j] : <code>dp[i][j] = dp[i+1][j-1]</code></p>
 </li>
-<li>
-<p>当s[i] != s[j] : <code>dp[i][j] =0</code></p>
+<li><p>当s[i] != s[j] : <code>dp[i][j] =0</code></p>
 </li>
-<li>
-<p>边界情况是当长度为1或2时：<code>dp[i][j] = 1, dp[i][i+1] = (s[i] == s[i+1]) ? 1 : 0</code></p>
+<li><p>边界情况是当长度为1或2时：<code>dp[i][j] = 1, dp[i][i+1] = (s[i] == s[i+1]) ? 1 : 0</code></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> len = s.length();</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; &gt; dp(len, <span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;(len, <span class="literal">false</span>));</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = i; j &lt; len; ++j) &#123;</span><br><span class="line">        <span class="keyword">if</span>(s[i] == s[j] &amp;&amp; (j - i &lt; <span class="number">3</span> || dp[i+<span class="number">1</span>][j<span class="number">-1</span>])) &#123;</span><br><span class="line">            dp[i][j] = <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">if</span>(j - i + <span class="number">1</span> &gt; res.length()) </span><br><span class="line">                res = s.substr(i, j - i + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> res;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-<li>
-<p>string.substr()中两个参数一个是起始下标，一个是长度</p>
+<li><p>string.substr()中两个参数一个是起始下标，一个是长度</p>
 </li>
 </ul>
-<h2 id="1041-queue应用-hash散列">1041(queue应用，Hash散列)</h2>
-<ul>
+<h2 id="1041-queue应用，Hash散列"><a href="#1041-queue应用，Hash散列" class="headerlink" title="1041(queue应用，Hash散列)"></a>1041(queue应用，Hash散列)</h2><ul>
 <li>第一次见到的入队，出现过两次以上的标记为seen，再从队列顶部查看，如果seen，则出队，找到第一个非seen标记即为所求</li>
 </ul>
-<h2 id="1042-排序">1042(排序)</h2>
-<ul>
+<h2 id="1042-排序"><a href="#1042-排序" class="headerlink" title="1042(排序)"></a>1042(排序)</h2><ul>
 <li>计算最终的位置即可</li>
 </ul>
-<h2 id="1043-树遍历以及之间的关系">1043(树遍历以及之间的关系)</h2>
-<ul>
+<h2 id="1043-树遍历以及之间的关系"><a href="#1043-树遍历以及之间的关系" class="headerlink" title="1043(树遍历以及之间的关系)"></a>1043(树遍历以及之间的关系)</h2><ul>
 <li>通过前序中序构建后序，并通过结构判断是否是BST</li>
 </ul>
-<h2 id="1044-二分法-查找">1044(二分法，查找)</h2>
-<ul>
+<h2 id="1044-二分法，查找"><a href="#1044-二分法，查找" class="headerlink" title="1044(二分法，查找)"></a>1044(二分法，查找)</h2><ul>
 <li>遍历起始下标i，找到最小的j，使得i-j的总价钱是正好&gt;=M</li>
 <li>通过二分加速</li>
 <li>储存diamond方式与1046类似，降低空间复杂度</li>
 </ul>
-<h2 id="1045-lc-subsequence">1045(LC-Subsequence)</h2>
-<p><img src="https://i.imgur.com/h6tBukd.png" alt="1532590220540"></p>
+<h2 id="1045-LC-Subsequence"><a href="#1045-LC-Subsequence" class="headerlink" title="1045(LC-Subsequence)"></a>1045(LC-Subsequence)</h2><p><img src="https://i.imgur.com/h6tBukd.png" alt="1532590220540"></p>
 <ul>
-<li>
-<p>此题是LCS的变体，在保持顺序的前提下，允许重复</p>
+<li><p>此题是LCS的变体，在保持顺序的前提下，允许重复</p>
 <p>$C[i][j] = max(C[i][j-1], C[i-1][j])\quad when\quad s1[i] \neq s2[j]$</p>
 <p>$C[i][j] = max(C[i][j-1], C[i-1][j])+1\quad when\quad s1[i] = s2[j]$</p>
 </li>
 </ul>
-<h2 id="1046-模拟-online边读入边计算">1046(模拟，online边读入边计算)</h2>
-<ul>
-<li>只需要储存某一个定点到其他所有点的距离，任意两点的距离都是abs(定点到这两点的距离之差)
-<ul>
+<h2 id="1046-模拟，online边读入边计算"><a href="#1046-模拟，online边读入边计算" class="headerlink" title="1046(模拟，online边读入边计算)"></a>1046(模拟，online边读入边计算)</h2><ul>
+<li>只需要储存某一个定点到其他所有点的距离，任意两点的距离都是abs(定点到这两点的距离之差)<ul>
 <li>注意顺序储存</li>
 </ul>
 </li>
 <li>最后比较这个距离和另一条路的距离(环路总距离 - 一条路的距离)</li>
 </ul>
-<h2 id="1047-1039的逆过程-大数据查找">1047(1039的逆过程，大数据查找)</h2>
-<ul>
+<h2 id="1047-1039的逆过程，大数据查找"><a href="#1047-1039的逆过程，大数据查找" class="headerlink" title="1047(1039的逆过程，大数据查找)"></a>1047(1039的逆过程，大数据查找)</h2><ul>
 <li>easy</li>
 </ul>
-<h2 id="1048-查找-二分查找">1048(查找，二分查找)</h2>
-<ul>
+<h2 id="1048-查找，二分查找"><a href="#1048-查找，二分查找" class="headerlink" title="1048(查找，二分查找)"></a>1048(查找，二分查找)</h2><ul>
 <li>调用binary_search</li>
 </ul>
-<h2 id="1049-数学问题">1049(数学问题)</h2>
-<ul>
-<li>now表示当前位，left表示当前位左边所有数字构成的数字，right表示当前位右边所有数字构成的数字，用a表示now对应的位制，a=1说明now在个位，a=10说明now在十位
-<ul>
+<h2 id="1049-数学问题"><a href="#1049-数学问题" class="headerlink" title="1049(数学问题)"></a>1049(数学问题)</h2><ul>
+<li>now表示当前位，left表示当前位左边所有数字构成的数字，right表示当前位右边所有数字构成的数字，用a表示now对应的位制，a=1说明now在个位，a=10说明now在十位<ul>
 <li>如果now是0：会产生left*a个1，因为只有在left从0~left-1的时候产生1，所以产生了left个，又因为右边会重复a次（0~a-1）</li>
 <li>如果now是1：要比上一种情况多产生 当now为1时，right从0~right所增加的right+1个1</li>
 <li>如果now大于1：会产生(left+1)*a个1，因为只有在left从0~left的时候产生1，所以产生了left个，又因为右边会重复a次（0~a-1）</li>
@@ -930,32 +833,26 @@
 <p>更好的解释</p>
 </blockquote>
 <ul>
-<li>假设<em>N</em>=<em>abcde</em>，这里<em>a</em>、<em>b</em>、<em>c</em>、<em>d</em>、<em>e</em>分别是十进制数<em>N</em>的各个数位上的数字。如果要计算百位上出现1的次数，它将会受到三个因素的影响：百位上的数字，百位以下（低位）的数字，百位（更高位）以上的数字。
-<ul>
+<li>假设<em>N</em>=<em>abcde</em>，这里<em>a</em>、<em>b</em>、<em>c</em>、<em>d</em>、<em>e</em>分别是十进制数<em>N</em>的各个数位上的数字。如果要计算百位上出现1的次数，它将会受到三个因素的影响：百位上的数字，百位以下（低位）的数字，百位（更高位）以上的数字。<ul>
 <li>如果百位上的数字为0，则可以知道，百位上可能出现1的次数由更高位决定，比如12 013，则可以知道百位出现1的情况可能是100～199，1 100～1 199，2 100～2 199，…，11 100~11 199，一共有1 200个。也就是由更高位数字（12）决定，并且等于更高位数字（12）×当前位数（100）。</li>
 <li>如果百位上的数字为1，则可以知道，百位上可能出现1的次数不仅受更高位影响，还受低位影响，也就是由更高位和低位共同决定。例如对于12 113，受更高位影响，百位出现1的情况是100～199，1 100～1 199，2 100～2 199，…，11 100~11 199，一共1 200个，和上面第一种情况一样，等于更高位数字（12）×当前位数（100）。但是它还受低位影响，百位出现1的情况是12 100～12 113，一共14个，等于低位数字（13）+1。</li>
 <li>如果百位上数字大于1（即为2~9），则百位上可能出现1的次数也仅由更高位决定，比如12 213，则百位出现1的可能性为：100～199，1 100～1 199，2 100～2 199，…，11 100～11 199，12 100～12 199，一共有1 300个，并且等于更高位数字+1（12+1）×当前位数（100）。</li>
 </ul>
 </li>
 </ul>
-<h2 id="1050-字符操作-字符串操作">1050(字符操作，字符串操作)</h2>
-<ul>
-<li>可见字符共95个，算上' '(空格)</li>
+<h2 id="1050-字符操作，字符串操作"><a href="#1050-字符操作，字符串操作" class="headerlink" title="1050(字符操作，字符串操作)"></a>1050(字符操作，字符串操作)</h2><ul>
+<li>可见字符共95个，算上’ ‘(空格)</li>
 <li>gets()为啥编译错误</li>
 </ul>
-<h2 id="1051-栈模拟-出栈序列判断">1051(栈模拟，出栈序列判断)</h2>
-<ul>
-<li>方法一：从最先出栈的元素开始遍历
-<ul>
+<h2 id="1051-栈模拟，出栈序列判断"><a href="#1051-栈模拟，出栈序列判断" class="headerlink" title="1051(栈模拟，出栈序列判断)"></a>1051(栈模拟，出栈序列判断)</h2><ul>
+<li>方法一：从最先出栈的元素开始遍历<ul>
 <li>当前出栈元素位A，所有在A后面出栈并且小于A的元素必须从大到小</li>
 <li>连续从大到小出栈的个数不能超过栈大小</li>
 </ul>
 </li>
-<li>方法二：模拟入栈出栈过程
-<ul>
+<li>方法二：模拟入栈出栈过程<ul>
 <li>保存输入的序列到数组</li>
-<li>顺序将1~n进栈
-<ul>
+<li>顺序将1~n进栈<ul>
 <li>如果大小超过栈大小，break</li>
 <li>设current = 1，从保存数组的第一个数字开始，判断是否与栈顶元素相等，相等则出栈current++，不相等就继续按顺序把数字压入栈</li>
 </ul>
@@ -963,407 +860,294 @@
 </ul>
 </li>
 </ul>
-<h2 id="1052-链表">1052(链表)</h2>
-<ul>
+<h2 id="1052-链表"><a href="#1052-链表" class="headerlink" title="1052(链表)"></a>1052(链表)</h2><ul>
 <li>不在链表中要去除</li>
 <li>链表为空输出0 -1</li>
 <li>通过map或者vector映射链表，vector所需空间大</li>
 </ul>
-<h2 id="1053-树遍历-dfs">1053(树遍历，DFS)</h2>
-<ul>
+<h2 id="1053-树遍历，DFS"><a href="#1053-树遍历，DFS" class="headerlink" title="1053(树遍历，DFS)"></a>1053(树遍历，DFS)</h2><ul>
 <li>先对儿子节点按照权排序，之后顺序遍历即可</li>
 </ul>
-<h2 id="1054-map的应用">1054(map的应用)</h2>
-<ul>
+<h2 id="1054-map的应用"><a href="#1054-map的应用" class="headerlink" title="1054(map的应用)"></a>1054(map的应用)</h2><ul>
 <li>map：$color\mapsto 出现的次数$</li>
 </ul>
-<h2 id="1055-排序">1055(排序)</h2>
-<ul>
+<h2 id="1055-排序"><a href="#1055-排序" class="headerlink" title="1055(排序)"></a>1055(排序)</h2><ul>
 <li>简单排序，遍历输出，达到计数要求退出</li>
-<li>加速的方法：<strong>n有10的5次方，m却只有100个，储存所有年龄按照题目要求排序后的前100名，得到的数组再进行遍历</strong></li>
+<li>加速的方法：<strong>n有10的5次方，m却只有100个，储存所有年龄按照题目要求排序后的前100名，得到的数组再进行遍历</strong> </li>
 <li>我自己又把问题想复杂了，先按年龄排序，然后二分查找，找到范围，再按照题设排序</li>
 </ul>
-<h2 id="1056-模拟-排序-priority-queue">1056(模拟，排序，priority_queue)</h2>
-<ul>
+<h2 id="1056-模拟，排序，priority-queue"><a href="#1056-模拟，排序，priority-queue" class="headerlink" title="1056(模拟，排序，priority_queue)"></a>1056(模拟，排序，priority_queue)</h2><ul>
 <li>seq数组储存每一轮的出场顺序，符合下一轮条件的push_back到末尾，最后删出原来所有的元素，进入下一轮</li>
 <li>通过priority_queue选出小组中最大的下标</li>
 </ul>
-<h2 id="1057-bit树状数组">1057(BIT树状数组)</h2>
-<ul>
-<li>
-<p>c[x]表示$\le x $的数出现的个数</p>
+<h2 id="1057-BIT树状数组"><a href="#1057-BIT树状数组" class="headerlink" title="1057(BIT树状数组)"></a>1057(BIT树状数组)</h2><ul>
+<li><p>c[x]表示$\le x $的数出现的个数</p>
 </li>
-<li>
-<p>求第k = (S.size() + 1)/2大的数，就是求从小到大的第K个数，即查找第一个x，使得小于等于x的数的个数等于K</p>
+<li><p>求第k = (S.size() + 1)/2大的数，就是求从小到大的第K个数，即查找第一个x，使得小于等于x的数的个数等于K</p>
 <ul>
-<li>
-<p>二分法加速</p>
+<li><p>二分法加速</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">PeekMedian</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">1</span>, right = maxn, mid, k = (s.size() + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">while</span>(left &lt; right) &#123;</span><br><span class="line">        mid = (left + right) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(getsum(mid) &gt;= k)</span><br><span class="line">            right = mid;</span><br><span class="line">        <span class="keyword">else</span> left = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="1058-进制转换">1058(进制转换)</h2>
-<ul>
+<h2 id="1058-进制转换"><a href="#1058-进制转换" class="headerlink" title="1058(进制转换)"></a>1058(进制转换)</h2><ul>
 <li>long long</li>
 <li>Galleon的base取LLONG_MAX</li>
 </ul>
-<h2 id="1059-生成素数表">1059(生成素数表)</h2>
-<ul>
-<li>
-<p>prime_tab</p>
+<h2 id="1059-生成素数表"><a href="#1059-生成素数表" class="headerlink" title="1059(生成素数表)"></a>1059(生成素数表)</h2><ul>
+<li><p>prime_tab</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RANGE 500000</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">long</span> i = <span class="number">2</span>; i*i &lt; RANGE; i++) </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">long</span> j = <span class="number">2</span>; j*i &lt;= RANGE; j++) </span><br><span class="line">                prime_tab[j*i] = <span class="literal">false</span>;</span><br><span class="line">fill(prime_tab.begin(), prime_tab.begin() + <span class="number">2</span>, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1060-科学计数">1060(科学计数)</h2>
-<ul>
+<h2 id="1060-科学计数"><a href="#1060-科学计数" class="headerlink" title="1060(科学计数)"></a>1060(科学计数)</h2><ul>
 <li>字符串处理</li>
 <li>找到第一个非零数字位置和小数点的位置（无小数点，则小数点位置默认在数末尾），两者之差就是幂指数</li>
 </ul>
-<h2 id="1061-字符串处理">1061(字符串处理)</h2>
-<ul>
+<h2 id="1061-字符串处理"><a href="#1061-字符串处理" class="headerlink" title="1061(字符串处理)"></a>1061(字符串处理)</h2><ul>
 <li>easy</li>
 </ul>
-<h2 id="1062-排序">1062(排序)</h2>
-<ul>
+<h2 id="1062-排序"><a href="#1062-排序" class="headerlink" title="1062(排序)"></a>1062(排序)</h2><ul>
 <li>priority_queue重载&lt;号</li>
 <li>或者vector排序，自定cmp函数</li>
 </ul>
-<h2 id="1063-set应用">1063(Set应用)</h2>
-<ul>
+<h2 id="1063-Set应用"><a href="#1063-Set应用" class="headerlink" title="1063(Set应用)"></a>1063(Set应用)</h2><ul>
 <li>简单查找</li>
 </ul>
-<h2 id="1064-完全二叉树-cbt">1064(完全二叉树，CBT)</h2>
-<ul>
+<h2 id="1064-完全二叉树，CBT"><a href="#1064-完全二叉树，CBT" class="headerlink" title="1064(完全二叉树，CBT)"></a>1064(完全二叉树，CBT)</h2><ul>
 <li>具有唯一性</li>
-<li>根据已排序的节点，节点个数为N，找到根的下标
-<ul>
+<li>根据已排序的节点，节点个数为N，找到根的下标<ul>
 <li>计算相同高度的“半满完全二叉树”的节点数 bound= (upper+low) / 2，upper和low是相邻两完美二叉树的节点数</li>
 <li>若大于bound，则第upper/2 + 1个节点就是根</li>
 <li>若小于等于bound，则第N - low/2个节点就是根</li>
 <li>递归进行</li>
 </ul>
 </li>
-<li>根与儿子在level序遍历中下标的关系
-<ul>
+<li>根与儿子在level序遍历中下标的关系<ul>
 <li>left = root*2+1</li>
 <li>right = root*2+2</li>
 </ul>
 </li>
 </ul>
-<h2 id="1065-大数相加-判断越界">1065(大数相加，判断越界)</h2>
-<ul>
+<h2 id="1065-大数相加，判断越界"><a href="#1065-大数相加，判断越界" class="headerlink" title="1065(大数相加，判断越界)"></a>1065(大数相加，判断越界)</h2><ul>
 <li>MAX + MAX = -2</li>
 <li>MIN + MIN= 0</li>
 </ul>
-<h2 id="1066-avl-tree">1066(AVL tree)</h2>
-<ul>
-<li>核心函数
-<ul>
+<h2 id="1066-AVL-tree"><a href="#1066-AVL-tree" class="headerlink" title="1066(AVL tree)"></a>1066(AVL tree)</h2><ul>
+<li>核心函数<ul>
 <li>get_height(Node* root)</li>
 <li>Insert(Node *root, int key)</li>
-<li>RR(Node *root)、LL(Node *root)、LR(Node *root)、RL(Node *root)</li>
+<li>RR(Node <em>root)、LL(Node </em>root)、LR(Node <em>root)、RL(Node </em>root)</li>
 </ul>
 </li>
 </ul>
-<h2 id="1067-模拟-贪心">1067(模拟，贪心)</h2>
-<ul>
+<h2 id="1067-模拟，贪心"><a href="#1067-模拟，贪心" class="headerlink" title="1067(模拟，贪心)"></a>1067(模拟，贪心)</h2><ul>
 <li>记录数字i在输入中的下标pos[i]，即i保存在pos[i]的位置</li>
 <li>输入时，用cnt记录没有在对应位置的数的个数，cnt就为<strong>迭代次数</strong></li>
 <li>0不在0位，如果在pos[0]位，该位置本应该是数pos[0]，而数pos[0]的位置在pos[pos[0]]，将这两个位置交换</li>
-<li>0在0位，当前序列不是有序的，就把0和第一个没有在对应位置的数进行交换
-<ul>
+<li>0在0位，当前序列不是有序的，就把0和第一个没有在对应位置的数进行交换<ul>
 <li>如果每次从头开始找很浪费时间。对于上一次查找，我们记录下标pre_k，说明pre_k以前的一定是排序好的，下一次就从pre_k开始就好了</li>
 </ul>
 </li>
 <li>v2是这一思想的紧凑实现，非常厉害</li>
 </ul>
-<h2 id="1068-01背包问题knapsack-problem">1068(01背包问题Knapsack problem)</h2>
-<ul>
-<li>
-<p>v1空间压缩，v2没有空间压缩，19/30错误的回溯方法</p>
+<h2 id="1068-01背包问题Knapsack-problem"><a href="#1068-01背包问题Knapsack-problem" class="headerlink" title="1068(01背包问题Knapsack problem)"></a>1068(01背包问题Knapsack problem)</h2><ul>
+<li><p>v1空间压缩，v2没有空间压缩，19/30错误的回溯方法</p>
 <ul>
 <li>回溯关键，<strong><u>物品size降序排列</u></strong></li>
 </ul>
 <p><img src="https://i.imgur.com/dS8Exbx.png" alt="1532923184005"></p>
 </li>
-<li>
-<p>该问题具有一定的特殊性，价值==size（价值与size成正比）</p>
+<li><p>该问题具有一定的特殊性，价值==size（价值与size成正比）</p>
 </li>
-<li>
-<p>递推关系：m(i, j)表示背包容量为 <strong><em>j</em></strong>，面对物品 <strong><em>i</em></strong> 所能获得的最大value</p>
+<li><p>递推关系：m(i, j)表示背包容量为 <strong><em>j</em></strong>，面对物品 <strong><em>i</em></strong> 所能获得的最大value</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(j&gt;=w[i])</span><br><span class="line">    m[i][j]=max(m[i<span class="number">-1</span>][j], m[i<span class="number">-1</span>][j-w[i]] + v[i]);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    m[i][j]=m[i<span class="number">-1</span>][j];</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>获得的最大价值<figure class="highlight plain"><figcaption><span>all i, max(m[i][C])```，通常是```max[N][C]```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 要得到选了那些物品，需要从矩阵右下角开始traceback</span><br><span class="line"></span><br><span class="line">  - **&lt;u&gt;只能获得一个解，这一个解与物品选取的顺序有关，当然所有解总是不变的&lt;/u&gt;**</span><br><span class="line"></span><br><span class="line">  ```c++</span><br><span class="line">  //用二维数组储存, N是item数，Capacity是背包容量,choice数组记录选择</span><br><span class="line">  vector&lt;int&gt; res;</span><br><span class="line">  void traceback() &#123;</span><br><span class="line">    int C = Capacity;</span><br><span class="line">    for(int i = N; C &gt; 0; i--) &#123;</span><br><span class="line">      if(m[i][C] == m[i-1][C-w[i]] + w[i]) &#123;</span><br><span class="line">       	res.push_back(w[i]);</span><br><span class="line">        C -= w[i];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //while的写法</span><br><span class="line">  while(C &gt; 0) &#123;</span><br><span class="line">    if(DP[i][C] == DP[i-1][C-w[i]]+w[i]) &#123;</span><br><span class="line">      res.push_back(w[i]);</span><br><span class="line">      C -= w[i];</span><br><span class="line">    &#125;</span><br><span class="line">    i--;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<li><p>获得的最大价值<figure class="highlight plain"><figcaption><span>all i, max(m[i][C])```，通常是```max[N][C]```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 要得到选了那些物品，需要从矩阵右下角开始traceback</span><br><span class="line"></span><br><span class="line">  - **&lt;u&gt;只能获得一个解，这一个解与物品选取的顺序有关，当然所有解总是不变的&lt;/u&gt;**</span><br><span class="line"></span><br><span class="line">  ```c++</span><br><span class="line">  //用二维数组储存, N是item数，Capacity是背包容量,choice数组记录选择</span><br><span class="line">  vector&lt;int&gt; res;</span><br><span class="line">  void traceback() &#123;</span><br><span class="line">    int C = Capacity;</span><br><span class="line">    for(int i = N; C &gt; 0; i--) &#123;</span><br><span class="line">      if(m[i][C] == m[i-1][C-w[i]] + w[i]) &#123;</span><br><span class="line">       	res.push_back(w[i]);</span><br><span class="line">        C -= w[i];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //while的写法</span><br><span class="line">  while(C &gt; 0) &#123;</span><br><span class="line">    if(DP[i][C] == DP[i-1][C-w[i]]+w[i]) &#123;</span><br><span class="line">      res.push_back(w[i]);</span><br><span class="line">      C -= w[i];</span><br><span class="line">    &#125;</span><br><span class="line">    i--;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 </li>
-<li>
-<p>空间优化</p>
+<li><p>空间优化</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; DP(M + <span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; &gt; choice(N + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;(M + <span class="number">1</span>, <span class="literal">false</span>));<span class="comment">//用choice回溯</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N; i++) &#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j = M; j &gt;= weight[i]; j--) &#123;</span><br><span class="line">    <span class="keyword">if</span>(DP[j] &lt;= DP[j - weight[i]] + weight[i]) &#123;</span><br><span class="line">      DP[j] = DP[j - weight[i]] + weight[i];</span><br><span class="line">      choice[i][j] = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1069-数学问题">1069(数学问题)</h2>
-<ul>
+<h2 id="1069-数学问题"><a href="#1069-数学问题" class="headerlink" title="1069(数学问题)"></a>1069(数学问题)</h2><ul>
 <li>注意输入和计算过程补0</li>
 <li>stoi真好用</li>
 </ul>
-<h2 id="1070-简单贪心">1070(简单贪心)</h2>
-<h2 id="1071-map的应用">1071(map的应用)</h2>
-<ul>
+<h2 id="1070-简单贪心"><a href="#1070-简单贪心" class="headerlink" title="1070(简单贪心)"></a>1070(简单贪心)</h2><h2 id="1071-map的应用"><a href="#1071-map的应用" class="headerlink" title="1071(map的应用)"></a>1071(map的应用)</h2><ul>
 <li>如果已经读到换行符，若token不为空，跳出while之后还要将这个token加上</li>
 </ul>
-<h2 id="1072-dijkstra算法">1072(Dijkstra算法)</h2>
-<ul>
-<li>
-<p>熟悉Dij的代码块</p>
+<h2 id="1072-Dijkstra算法"><a href="#1072-Dijkstra算法" class="headerlink" title="1072(Dijkstra算法)"></a>1072(Dijkstra算法)</h2><ul>
+<li><p>熟悉Dij的代码块</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">fill(d.begin(), d.end(), INF);</span><br><span class="line">fill(visited.begin(), visited.end(), <span class="literal">false</span>);</span><br><span class="line">d[src] = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N; i++) &#123;</span><br><span class="line">  <span class="keyword">int</span> u = <span class="number">-1</span>, min = INF;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= N; j++) &#123;</span><br><span class="line">    <span class="keyword">if</span>(!visited[j] &amp;&amp; d[j] &lt; min) &#123;</span><br><span class="line">      u = j;</span><br><span class="line">      min = d[j];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(u == <span class="number">-1</span>) <span class="keyword">break</span>;</span><br><span class="line">  visited[u] = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">1</span>; v &lt;= N; v++) &#123;</span><br><span class="line">    <span class="keyword">if</span>(!visited[v] &amp;&amp; e[u][v] != INF &amp;&amp; d[u] + e[u][v] &lt; d[v]) </span><br><span class="line">      d[v] = d[u] + e[u][v];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1073-字符串操作-科学计数法">1073(字符串操作，科学计数法)</h2>
-<h2 id="1074-链表数组表示-分组">1074(链表数组表示，分组)</h2>
-<h2 id="1075-排序">1075(排序)</h2>
-<ul>
+<h2 id="1073-字符串操作，科学计数法"><a href="#1073-字符串操作，科学计数法" class="headerlink" title="1073(字符串操作，科学计数法)"></a>1073(字符串操作，科学计数法)</h2><h2 id="1074-链表数组表示，分组"><a href="#1074-链表数组表示，分组" class="headerlink" title="1074(链表数组表示，分组)"></a>1074(链表数组表示，分组)</h2><h2 id="1075-排序"><a href="#1075-排序" class="headerlink" title="1075(排序)"></a>1075(排序)</h2><ul>
 <li>拿到满分的题目数统计时，如果有多次相同题目的满分提交，要判断取最大值之前是不是已经满分了，如果已经满分了，满分题目数不再增加</li>
 </ul>
-<h2 id="1076-bfs-queue的应用">1076(BFS, queue的应用)</h2>
-<ul>
+<h2 id="1076-BFS-queue的应用"><a href="#1076-BFS-queue的应用" class="headerlink" title="1076(BFS, queue的应用)"></a>1076(BFS, queue的应用)</h2><ul>
 <li>用队列实现，某一层在队列中，依次出列，出列元素对应的下一层入列，通过记录操作前队列的大小（即pop的次数），可以使得下一层入列之后，之前层都出列了</li>
 </ul>
-<h2 id="1077-字符串操作">1077(字符串操作)</h2>
-<ul>
+<h2 id="1077-字符串操作"><a href="#1077-字符串操作" class="headerlink" title="1077(字符串操作)"></a>1077(字符串操作)</h2><ul>
 <li>getline(cin, string)</li>
 <li>判断是否已经为空串</li>
 </ul>
-<h2 id="1078-hash二次探测法">1078(hash二次探测法)</h2>
-<ul>
+<h2 id="1078-hash二次探测法"><a href="#1078-hash二次探测法" class="headerlink" title="1078(hash二次探测法)"></a>1078(hash二次探测法)</h2><ul>
 <li>函数函数一般为h(key) = key % size;</li>
 <li>if idx = H(key) 可以插入，则插入</li>
-<li>else idx = H(key + i*i) for i = 0,1,...,size-1</li>
+<li>else idx = H(key + i*i) for i = 0,1,…,size-1 </li>
 </ul>
-<h2 id="1079-树的遍历-dfs-or-bfs">1079(树的遍历，DFS or BFS)</h2>
-<h2 id="1080-排序">1080(排序)</h2>
-<ul>
+<h2 id="1079-树的遍历，DFS-or-BFS"><a href="#1079-树的遍历，DFS-or-BFS" class="headerlink" title="1079(树的遍历，DFS or BFS)"></a>1079(树的遍历，DFS or BFS)</h2><h2 id="1080-排序"><a href="#1080-排序" class="headerlink" title="1080(排序)"></a>1080(排序)</h2><ul>
 <li>区分下标与打印时的ID是不是同一个东西</li>
 </ul>
-<h2 id="1081-gcd-分数相加模拟">1081(gcd，分数相加模拟)</h2>
-<p>浮点错误应该考虑程序中：</p>
+<h2 id="1081-gcd，分数相加模拟"><a href="#1081-gcd，分数相加模拟" class="headerlink" title="1081(gcd，分数相加模拟)"></a>1081(gcd，分数相加模拟)</h2><p>浮点错误应该考虑程序中：</p>
 <ul>
 <li>是否可能出现了一个数除以0的情况</li>
 <li>是否可能出现了一个数取余0的情况</li>
 <li>是否发生了数据溢出而导致的除以0或者取余0的情况</li>
 </ul>
-<h2 id="1082-字符串操作">1082(字符串操作)</h2>
-<h2 id="1083-简单排序">1083(简单排序)</h2>
-<h2 id="1084-简单字符串操作">1084(简单字符串操作)</h2>
-<h2 id="1085-二分法-查找">1085(二分法，查找)</h2>
-<ul>
-<li>
-<p>复杂度O(nlogn)</p>
+<h2 id="1082-字符串操作"><a href="#1082-字符串操作" class="headerlink" title="1082(字符串操作)"></a>1082(字符串操作)</h2><h2 id="1083-简单排序"><a href="#1083-简单排序" class="headerlink" title="1083(简单排序)"></a>1083(简单排序)</h2><h2 id="1084-简单字符串操作"><a href="#1084-简单字符串操作" class="headerlink" title="1084(简单字符串操作)"></a>1084(简单字符串操作)</h2><h2 id="1085-二分法，查找"><a href="#1085-二分法，查找" class="headerlink" title="1085(二分法，查找)"></a>1085(二分法，查找)</h2><ul>
+<li><p>复杂度O(nlogn)</p>
 </li>
-<li>
-<p>熟练使用<strong>upper_bound()</strong> 也可解决问题，复杂度为O(N)</p>
+<li><p>熟练使用<strong>upper_bound()</strong> 也可解决问题，复杂度为O(N)</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">  	res = max(res, upper_bound(arr.begin(), arr.end(), arr[i]*p) - (arr.begin()+i));</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1086-树的遍历之间的关系">1086(树的遍历之间的关系)</h2>
-<ul>
+<h2 id="1086-树的遍历之间的关系"><a href="#1086-树的遍历之间的关系" class="headerlink" title="1086(树的遍历之间的关系)"></a>1086(树的遍历之间的关系)</h2><ul>
 <li>前、中 推出 后</li>
 </ul>
-<h2 id="1087-dijkstra-路径保存-dfs搜索最优路径">1087(Dijkstra+路径保存+DFS搜索最优路径)</h2>
-<ul>
+<h2 id="1087-Dijkstra-路径保存-DFS搜索最优路径"><a href="#1087-Dijkstra-路径保存-DFS搜索最优路径" class="headerlink" title="1087(Dijkstra+路径保存+DFS搜索最优路径)"></a>1087(Dijkstra+路径保存+DFS搜索最优路径)</h2><ul>
 <li>与1018类似</li>
 </ul>
-<h2 id="1088-分数四则运算-字符串操作">1088(分数四则运算，字符串操作)</h2>
-<ul>
+<h2 id="1088-分数四则运算，字符串操作"><a href="#1088-分数四则运算，字符串操作" class="headerlink" title="1088(分数四则运算，字符串操作)"></a>1088(分数四则运算，字符串操作)</h2><ul>
 <li>注意判断符号</li>
 </ul>
-<h2 id="1089-插入排序-merge-sort-判断与模拟">1089(插入排序，Merge Sort，判断与模拟)</h2>
-<ul>
+<h2 id="1089-插入排序，Merge-Sort，判断与模拟"><a href="#1089-插入排序，Merge-Sort，判断与模拟" class="headerlink" title="1089(插入排序，Merge Sort，判断与模拟)"></a>1089(插入排序，Merge Sort，判断与模拟)</h2><ul>
 <li>本解答提供了一种判断当前merge sort步长的方法</li>
 <li>提供了一种伪模拟的方法</li>
 </ul>
-<h2 id="1090-简单dfs">1090(简单DFS)</h2>
-<h2 id="1091-bfs-三维方向">1091(BFS，三维方向)</h2>
-<p><img src="https://i.imgur.com/lqHSU1d.png" alt="1533178361533"></p>
+<h2 id="1090-简单DFS"><a href="#1090-简单DFS" class="headerlink" title="1090(简单DFS)"></a>1090(简单DFS)</h2><h2 id="1091-BFS，三维方向"><a href="#1091-BFS，三维方向" class="headerlink" title="1091(BFS，三维方向)"></a>1091(BFS，三维方向)</h2><p><img src="https://i.imgur.com/lqHSU1d.png" alt="1533178361533"></p>
 <ul>
 <li>BFS</li>
-<li>其实也是计算连通分量的个数，或许能用并查集实现，将三位数组化成一数组idx = 100*i+10*j+k</li>
+<li>其实也是计算连通分量的个数，或许能用并查集实现，将三位数组化成一数组idx = 100<em>i+10\</em>j+k</li>
 </ul>
-<h2 id="1092-字符串处理">1092(字符串处理)</h2>
-<h2 id="1093-字符串处理">1093(字符串处理)</h2>
-<ul>
+<h2 id="1092-字符串处理"><a href="#1092-字符串处理" class="headerlink" title="1092(字符串处理)"></a>1092(字符串处理)</h2><h2 id="1093-字符串处理"><a href="#1093-字符串处理" class="headerlink" title="1093(字符串处理)"></a>1093(字符串处理)</h2><ul>
 <li>Pcnt、PAcnt、PATcnt，online可以解决</li>
 </ul>
-<h2 id="1094-dfs-bfs-树遍历">1094(DFS, BFS，树遍历)</h2>
-<ul>
+<h2 id="1094-DFS-BFS，树遍历"><a href="#1094-DFS-BFS，树遍历" class="headerlink" title="1094(DFS, BFS，树遍历)"></a>1094(DFS, BFS，树遍历)</h2><ul>
 <li>BFS用queue实现</li>
 </ul>
-<h2 id="1095-模拟difficult">1095(模拟difficult)</h2>
-<ul>
-<li><strong>配对要求是，如果一个车多次进入未出，取最后一个值；如果一个车多次out未进入，取第一个值。</strong></li>
-<li><strong>注意：一个车可能出入校园好多次，停车的时间应该取之和。</strong></li>
+<h2 id="1095-模拟difficult"><a href="#1095-模拟difficult" class="headerlink" title="1095(模拟difficult)"></a>1095(模拟difficult)</h2><ul>
+<li><strong>配对要求是，如果一个车多次进入未出，取最后一个值；如果一个车多次out未进入，取第一个值。</strong> </li>
+<li><strong>注意：一个车可能出入校园好多次，停车的时间应该取之和。</strong> </li>
 </ul>
 <blockquote>
 <p><strong>为了简便，应该把小时和分钟都化简成秒数计算比较方便。</strong> <strong>一开始所有车辆的id、时间和是进还是出（进的flag是1，出的flag是-1），对他们排序，先按照车牌号排序，再按照来的时间先后排序。</strong></p>
-<p><strong>此后就能根据这样的排序后的顺序将所有满足条件（合法）的车辆进出记录保存到另一个数组里面。这个数组再按照时间先后排序。</strong> <strong>因为多次询问值，为了避免超时，可以把他们的车辆数carcnt数组先算出来。到时候直接取值就会比较快速。carcnt[i]表示在i下标的记录的时间点的时候车辆的数量。数量可以由前一个数量+当前车辆的flag得到。</strong></p>
-<p><strong>因为问询的时候是多个时间点按照从小到大的顺序，利用好这点能避免超时。如果上一个查询的index已经被记住，那么下一次就只需要从这个index开始找就可以了，避免重复寻找，浪费时间。</strong></p>
+<p> <strong>此后就能根据这样的排序后的顺序将所有满足条件（合法）的车辆进出记录保存到另一个数组里面。这个数组再按照时间先后排序。</strong> <strong>因为多次询问值，为了避免超时，可以把他们的车辆数carcnt数组先算出来。到时候直接取值就会比较快速。carcnt[i]表示在i下标的记录的时间点的时候车辆的数量。数量可以由前一个数量+当前车辆的flag得到。</strong> </p>
+<p><strong>因为问询的时候是多个时间点按照从小到大的顺序，利用好这点能避免超时。如果上一个查询的index已经被记住，那么下一次就只需要从这个index开始找就可以了，避免重复寻找，浪费时间。</strong> </p>
 </blockquote>
-<h2 id="1096-循环-逻辑题">1096(循环，逻辑题)</h2>
-<ul>
+<h2 id="1096-循环，逻辑题"><a href="#1096-循环，逻辑题" class="headerlink" title="1096(循环，逻辑题)"></a>1096(循环，逻辑题)</h2><ul>
 <li>对素数直接输出加速</li>
 </ul>
-<h2 id="1097-链表-类似题1032-1052-1074">1097(链表，类似题1032、1052、1074)</h2>
-<h2 id="1098-insertion-sort-heap-sort判断与模拟">1098(Insertion sort、Heap sort判断与模拟)</h2>
-<ul>
+<h2 id="1097-链表，类似题1032、1052、1074"><a href="#1097-链表，类似题1032、1052、1074" class="headerlink" title="1097(链表，类似题1032、1052、1074)"></a>1097(链表，类似题1032、1052、1074)</h2><h2 id="1098-Insertion-sort、Heap-sort判断与模拟"><a href="#1098-Insertion-sort、Heap-sort判断与模拟" class="headerlink" title="1098(Insertion sort、Heap sort判断与模拟)"></a>1098(Insertion sort、Heap sort判断与模拟)</h2><ul>
 <li>make_heap、pop_heap用来模拟Heap sort</li>
 </ul>
-<h2 id="1099">1099</h2>
-<p><img src="https://i.imgur.com/jfsRhSb.png" alt="1533282700432"></p>
+<h2 id="1099"><a href="#1099" class="headerlink" title="1099"></a>1099</h2><p><img src="https://i.imgur.com/jfsRhSb.png" alt="1533282700432"></p>
 <ul>
 <li>二叉搜索树，中序遍历是升序，模拟中序遍历即可插入key，之后层序遍历即可</li>
 </ul>
-<h2 id="1100-字符串处理">1100(字符串处理)</h2>
-<h2 id="1101-quick-sort">1101(quick sort)</h2>
-<ul>
-<li><strong>对原序列sort排序，逐个比较，当当前元素没有变化并且它左边的所有值的最大值都比它小的时候就可以认为它一定是主元（很容易证明正确性的，毕竟无论如何当前这个数要满足左边都比他大右边都比他小，那它的排名【当前数在序列中处在第几个】一定不会变）。</strong></li>
+<h2 id="1100-字符串处理"><a href="#1100-字符串处理" class="headerlink" title="1100(字符串处理)"></a>1100(字符串处理)</h2><h2 id="1101-quick-sort"><a href="#1101-quick-sort" class="headerlink" title="1101(quick sort)"></a>1101(quick sort)</h2><ul>
+<li><strong>对原序列sort排序，逐个比较，当当前元素没有变化并且它左边的所有值的最大值都比它小的时候就可以认为它一定是主元（很容易证明正确性的，毕竟无论如何当前这个数要满足左边都比他大右边都比他小，那它的排名【当前数在序列中处在第几个】一定不会变）。</strong> </li>
 </ul>
-<h2 id="1102-层序遍历-中序遍历">1102(层序遍历，中序遍历)</h2>
-<h2 id="1103-dfs-剪枝-用数组储存幂值加速">1103(DFS+剪枝，用数组储存幂值加速)</h2>
-<ul>
-<li>
-<p>由于结果要求序列最大同时和最大，因此从大到小枚举，下一层枚举值不能超过上一层枚举值，保证了序列和最大的同时，序列最大</p>
+<h2 id="1102-层序遍历，中序遍历"><a href="#1102-层序遍历，中序遍历" class="headerlink" title="1102(层序遍历，中序遍历)"></a>1102(层序遍历，中序遍历)</h2><h2 id="1103-DFS-剪枝，用数组储存幂值加速"><a href="#1103-DFS-剪枝，用数组储存幂值加速" class="headerlink" title="1103(DFS+剪枝，用数组储存幂值加速)"></a>1103(DFS+剪枝，用数组储存幂值加速)</h2><ul>
+<li><p>由于结果要求序列最大同时和最大，因此从大到小枚举，下一层枚举值不能超过上一层枚举值，保证了序列和最大的同时，序列最大</p>
 </li>
-<li>
-<p>将当前和作为参数传入下一层，而不是在最后一层遍历相加，依次加速</p>
+<li><p>将当前和作为参数传入下一层，而不是在最后一层遍历相加，依次加速</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = tmp.empty() ? <span class="built_in">floor</span>(<span class="built_in">pow</span>(num, <span class="number">1.0</span>/P)) : tmp.back(); vfactor[i] &gt;= <span class="number">1</span>; i--) &#123;</span><br><span class="line">  tmp.push_back(i);</span><br><span class="line">  <span class="keyword">if</span>(num &gt;= vfactor[i]) KP(num - vfactor[i], depth + <span class="number">1</span>, sum+i);</span><br><span class="line">  tmp.pop_back();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>pow(i, P)提前计算，存在vfactor[i]，减少搜索中不必要的计算</p>
+<li><p>pow(i, P)提前计算，存在vfactor[i]，减少搜索中不必要的计算</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>, tmp = <span class="number">0</span>; tmp &lt;= N; tmp = <span class="built_in">pow</span>(i, P), i++) </span><br><span class="line">vfactor.push_back(tmp);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1104-数学问题">1104(数学问题)</h2>
-<h2 id="1105-数学问题">1105(数学问题)</h2>
-<ul>
+<h2 id="1104-数学问题"><a href="#1104-数学问题" class="headerlink" title="1104(数学问题)"></a>1104(数学问题)</h2><h2 id="1105-数学问题"><a href="#1105-数学问题" class="headerlink" title="1105(数学问题)"></a>1105(数学问题)</h2><ul>
 <li>顺时针螺旋填入矩阵</li>
 </ul>
-<h2 id="1106-bfs">1106(BFS)</h2>
-<h2 id="1107-并查集">1107(并查集)</h2>
-<h2 id="1108-字符串处理">1108(字符串处理)</h2>
-<h2 id="1109-排序后指定输出">1109(排序后指定输出)</h2>
-<h2 id="1110-bfs-完全二叉树判断">1110(BFS, 完全二叉树判断)</h2>
-<h2 id="1111-dijkstra-路径选择">1111(Dijkstra，路径选择)</h2>
-<ul>
+<h2 id="1106-BFS"><a href="#1106-BFS" class="headerlink" title="1106(BFS)"></a>1106(BFS)</h2><h2 id="1107-并查集"><a href="#1107-并查集" class="headerlink" title="1107(并查集)"></a>1107(并查集)</h2><h2 id="1108-字符串处理"><a href="#1108-字符串处理" class="headerlink" title="1108(字符串处理)"></a>1108(字符串处理)</h2><h2 id="1109-排序后指定输出"><a href="#1109-排序后指定输出" class="headerlink" title="1109(排序后指定输出)"></a>1109(排序后指定输出)</h2><h2 id="1110-BFS-完全二叉树判断"><a href="#1110-BFS-完全二叉树判断" class="headerlink" title="1110(BFS, 完全二叉树判断)"></a>1110(BFS, 完全二叉树判断)</h2><h2 id="1111-Dijkstra，路径选择"><a href="#1111-Dijkstra，路径选择" class="headerlink" title="1111(Dijkstra，路径选择)"></a>1111(Dijkstra，路径选择)</h2><ul>
 <li>路径选择可以保存二维数组，DFS选择路径</li>
 <li>也可以记录到达每个节点时的判定值，直接选择</li>
 </ul>
-<h2 id="1112-字符串操作">1112(字符串操作)</h2>
-<ul>
-<li>
-<p>注意细节呀细节：当输入的长度小于k的情况；当剩余未遍历字符数少于k的情况</p>
+<h2 id="1112-字符串操作"><a href="#1112-字符串操作" class="headerlink" title="1112(字符串操作)"></a>1112(字符串操作)</h2><ul>
+<li><p>注意细节呀细节：当输入的长度小于k的情况；当剩余未遍历字符数少于k的情况</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(line.length() - i &lt; k) &#123;</span><br><span class="line">  isbroken[toascii(line[i])] = <span class="literal">false</span>;</span><br><span class="line">  i++;</span><br><span class="line">  <span class="keyword">continue</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1113-排序">1113(排序)</h2>
-<ul>
+<h2 id="1113-排序"><a href="#1113-排序" class="headerlink" title="1113(排序)"></a>1113(排序)</h2><ul>
 <li>so easy</li>
 </ul>
-<h2 id="1114-并查集">1114(并查集)</h2>
-<h2 id="1115-bfs-建立bst">1115(BFS，建立BST)</h2>
-<ul>
+<h2 id="1114-并查集"><a href="#1114-并查集" class="headerlink" title="1114(并查集)"></a>1114(并查集)</h2><h2 id="1115-BFS，建立BST"><a href="#1115-BFS，建立BST" class="headerlink" title="1115(BFS，建立BST)"></a>1115(BFS，建立BST)</h2><ul>
 <li>easy</li>
 </ul>
-<h2 id="1116-简单逻辑题">1116(简单逻辑题)</h2>
-<h2 id="1117-逻辑题-难看懂题目-排序">1117(逻辑题，难看懂题目,排序)</h2>
-<ul>
+<h2 id="1116-简单逻辑题"><a href="#1116-简单逻辑题" class="headerlink" title="1116(简单逻辑题)"></a>1116(简单逻辑题)</h2><h2 id="1117-逻辑题，难看懂题目-排序"><a href="#1117-逻辑题，难看懂题目-排序" class="headerlink" title="1117(逻辑题，难看懂题目,排序)"></a>1117(逻辑题，难看懂题目,排序)</h2><ul>
 <li>N天中有E天骑行的距离超过E，求最大的E</li>
 </ul>
-<h2 id="1118-简单并查集">1118(简单并查集)</h2>
-<h2 id="1119-树遍历之间的转换-前序后序转中序">1119(树遍历之间的转换，前序后序转中序)</h2>
-<ul>
-<li><strong>首先我们需要知道树的表示范围，需要四个变量，分别是前序的开始的地方preLeft，前序结束的地方preRight，后序开始的地方postLeft，后序结束的地方postRight</strong></li>
+<h2 id="1118-简单并查集"><a href="#1118-简单并查集" class="headerlink" title="1118(简单并查集)"></a>1118(简单并查集)</h2><h2 id="1119-树遍历之间的转换，前序后序转中序"><a href="#1119-树遍历之间的转换，前序后序转中序" class="headerlink" title="1119(树遍历之间的转换，前序后序转中序)"></a>1119(树遍历之间的转换，前序后序转中序)</h2><ul>
+<li><strong>首先我们需要知道树的表示范围，需要四个变量，分别是前序的开始的地方preLeft，前序结束的地方preRight，后序开始的地方postLeft，后序结束的地方postRight</strong> </li>
 <li>前序遍历的第一个与后序遍历最后一个是根节点</li>
-<li>以后序遍历最后一个(根节点)节点的前一个节点val为基准，寻找这个节点在前序中的位置
-<ul>
+<li>以后序遍历最后一个(根节点)节点的前一个节点val为基准，寻找这个节点在前序中的位置<ul>
 <li>如果val在前序中正好在前序中第一个节点(根节点)的后面，那么根节点只有<strong>一颗子树</strong>，子树的根节点是val，那么正是这种情况无法确定val是在根的左边还是右边，flag=false，并规定它总是为右节点</li>
 <li>如果在前序中val和preLeft(根节点)直接还有节点，说明这个val是根的右儿子，前序中根节点和val之间的节点都是左子树，对应在后序中就是从postLeft开始的相同个数的节点，右子树就是前序中包括val，到preRight的所有节点，对应后序中就是去掉前面那些左子树的节点到包括postRight-1这些节点</li>
 </ul>
 </li>
 </ul>
-<h2 id="1120-简单题">1120(简单题)</h2>
-<h2 id="1121-数组map-简单题">1121(数组map，简单题)</h2>
-<h2 id="1122-哈密尔顿回路判定">1122(哈密尔顿回路判定)</h2>
-<ul>
-<li>
-<p>连通性判断</p>
+<h2 id="1120-简单题"><a href="#1120-简单题" class="headerlink" title="1120(简单题)"></a>1120(简单题)</h2><h2 id="1121-数组map，简单题"><a href="#1121-数组map，简单题" class="headerlink" title="1121(数组map，简单题)"></a>1121(数组map，简单题)</h2><h2 id="1122-哈密尔顿回路判定"><a href="#1122-哈密尔顿回路判定" class="headerlink" title="1122(哈密尔顿回路判定)"></a>1122(哈密尔顿回路判定)</h2><ul>
+<li><p>连通性判断</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isConnected</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> pre = v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; kn; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (graph[pre][v[i]] != <span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        pre = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>连通之后只需判断访问次数即可</p>
+<li><p>连通之后只需判断访问次数即可</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isHamilt</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (v[<span class="number">0</span>] != v[kn<span class="number">-1</span>]) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; times(kn, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; kn; i++)</span><br><span class="line">        times[v[i]]++;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; kn; i++)</span><br><span class="line">        <span class="keyword">if</span> ((i == v[<span class="number">0</span>] &amp;&amp; times[i] != <span class="number">2</span>) || (i != v[<span class="number">0</span>] &amp;&amp; times[i] != <span class="number">1</span>)) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="1123-avl-tree-层序遍历">1123(AVL tree，层序遍历)</h2>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Node *<span class="title">Inster</span><span class="params">(Node *root, <span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(root == <span class="literal">NULL</span>) &#123;</span><br><span class="line">    root = <span class="keyword">new</span> Node();</span><br><span class="line">    Node-&gt;key = key;</span><br><span class="line">    Node-&gt;left = Node-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(key &lt; root-&gt;key) &#123;</span><br><span class="line">    root-&gt;left = Insert(root-&gt;left, key);</span><br><span class="line">    <span class="keyword">if</span>(get_height(root-&gt;left) - get_height(root-&gt;right) == <span class="number">2</span>) </span><br><span class="line">      root = key &lt; root-&gt;left-&gt;key ? LL(root-&gt;left) : LR(root-&gt;right);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> &#123;</span><br><span class="line">    root-&gt;right = Insert(root-&gt;right, key);</span><br><span class="line">    <span class="keyword">if</span>(get_height(root-&gt;right) - get_height(root-&gt;left) == <span class="number">2</span>) </span><br><span class="line">      root = key &lt; root-&gt;left-&gt;key ? RL(root-&gt;left) : RR(root-&gt;right);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="1124-map-简单逻辑题">1124(map，简单逻辑题)</h2>
-<ul>
+<h2 id="1123-AVL-tree，层序遍历"><a href="#1123-AVL-tree，层序遍历" class="headerlink" title="1123(AVL tree，层序遍历)"></a>1123(AVL tree，层序遍历)</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Node *<span class="title">Inster</span><span class="params">(Node *root, <span class="keyword">int</span> key)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(root == <span class="literal">NULL</span>) &#123;</span><br><span class="line">    root = <span class="keyword">new</span> Node();</span><br><span class="line">    Node-&gt;key = key;</span><br><span class="line">    Node-&gt;left = Node-&gt;right = <span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(key &lt; root-&gt;key) &#123;</span><br><span class="line">    root-&gt;left = Insert(root-&gt;left, key);</span><br><span class="line">    <span class="keyword">if</span>(get_height(root-&gt;left) - get_height(root-&gt;right) == <span class="number">2</span>) </span><br><span class="line">      root = key &lt; root-&gt;left-&gt;key ? LL(root-&gt;left) : LR(root-&gt;right);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> &#123;</span><br><span class="line">    root-&gt;right = Insert(root-&gt;right, key);</span><br><span class="line">    <span class="keyword">if</span>(get_height(root-&gt;right) - get_height(root-&gt;left) == <span class="number">2</span>) </span><br><span class="line">      root = key &lt; root-&gt;left-&gt;key ? RL(root-&gt;left) : RR(root-&gt;right);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1124-map，简单逻辑题"><a href="#1124-map，简单逻辑题" class="headerlink" title="1124(map，简单逻辑题)"></a>1124(map，简单逻辑题)</h2><ul>
 <li>遍历一遍即可</li>
 </ul>
-<h2 id="1125-简单逻辑题">1125(简单逻辑题)</h2>
-<h2 id="1126-欧拉回路-半欧拉路径判定">1126(欧拉回路，半欧拉路径判定)</h2>
-<ul>
-<li>
-<p>DFS判定连通性</p>
+<h2 id="1125-简单逻辑题"><a href="#1125-简单逻辑题" class="headerlink" title="1125(简单逻辑题)"></a>1125(简单逻辑题)</h2><h2 id="1126-欧拉回路，半欧拉路径判定"><a href="#1126-欧拉回路，半欧拉路径判定" class="headerlink" title="1126(欧拉回路，半欧拉路径判定)"></a>1126(欧拉回路，半欧拉路径判定)</h2><ul>
+<li><p>DFS判定连通性</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</span><br><span class="line">  visit[index] = <span class="literal">true</span>;</span><br><span class="line">  cnt++;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; v[index].size(); i++)<span class="comment">//邻接表</span></span><br><span class="line">    <span class="keyword">if</span> (visit[v[index][i]] == <span class="literal">false</span>)</span><br><span class="line">      dfs(v[index][i]);</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">  for(int i = 1; i &lt;= N; i++) &#123;//邻接矩阵</span></span><br><span class="line"><span class="comment">    if(!visited[i] &amp;&amp; e[u][i] == 1) </span></span><br><span class="line"><span class="comment">      DFS(i);</span></span><br><span class="line"><span class="comment">  &#125;</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">&#125;</span><br><span class="line">dfs(<span class="number">1</span>);</span><br><span class="line">cnt为n是连通的</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>连通无向图：|E|&gt;=|V|-1</p>
+<li><p>连通无向图：|E|&gt;=|V|-1</p>
 </li>
 </ul>
-<h2 id="1127-post-order-in-order-level-order-zigzag输出">1127(post order+in order =&gt; level order zigzag输出)</h2>
-<ul>
+<h2 id="1127-post-order-in-order-gt-level-order-zigzag输出"><a href="#1127-post-order-in-order-gt-level-order-zigzag输出" class="headerlink" title="1127(post order+in order =&gt; level order zigzag输出)"></a>1127(post order+in order =&gt; level order zigzag输出)</h2><ul>
 <li>其实只是在输出时增加判断改变顺序即可，每一层记录一个low index和high index，交替从low到high和从high到low</li>
 </ul>
-<h2 id="1028-逻辑题-判断-n-queens-puzzle">1028(逻辑题，判断 N Queens Puzzle)</h2>
-<ul>
+<h2 id="1028-逻辑题，判断-N-Queens-Puzzle"><a href="#1028-逻辑题，判断-N-Queens-Puzzle" class="headerlink" title="1028(逻辑题，判断 N Queens Puzzle)"></a>1028(逻辑题，判断 N Queens Puzzle)</h2><ul>
 <li>对角线判断只需要判断横坐标和纵坐标的差是否出现过</li>
 </ul>
-<h2 id="1129-逻辑题-也可以用set重载-来做">1129(逻辑题，也可以用set重载&lt;来做)</h2>
-<ul>
+<h2 id="1129-逻辑题，也可以用set重载-lt-来做"><a href="#1129-逻辑题，也可以用set重载-lt-来做" class="headerlink" title="1129(逻辑题，也可以用set重载&lt;来做)"></a>1129(逻辑题，也可以用set重载&lt;来做)</h2><ul>
 <li>每次更新选出top k，那我就用k+1大小的数组，每次更新若已在数组中，不操作，若不在则放置在最后一位，因为前k位只会与当前更新的这一个值和它们自己相关，在调用sort函数即可</li>
-<li>set的做法https://www.liuchuo.net/archives/3848 不推荐，很容易用错</li>
+<li>set的做法<a href="https://www.liuchuo.net/archives/3848" target="_blank" rel="noopener">https://www.liuchuo.net/archives/3848</a> 不推荐，很容易用错</li>
 </ul>
-<h2 id="1130-树中序遍历">1130(树中序遍历)</h2>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">res = res + <span class="string">"("</span>;</span><br><span class="line"><span class="keyword">if</span>(Tree[root].left != <span class="number">-1</span>) </span><br><span class="line">  inorder(Tree[root].left);</span><br><span class="line">res = res + Tree[root].o;</span><br><span class="line"><span class="keyword">if</span>(Tree[root].right != <span class="number">-1</span>) </span><br><span class="line">  inorder(Tree[root].right);</span><br><span class="line">res = res + <span class="string">")"</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="1130-树中序遍历"><a href="#1130-树中序遍历" class="headerlink" title="1130(树中序遍历)"></a>1130(树中序遍历)</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">res = res + <span class="string">"("</span>;</span><br><span class="line"><span class="keyword">if</span>(Tree[root].left != <span class="number">-1</span>) </span><br><span class="line">  inorder(Tree[root].left);</span><br><span class="line">res = res + Tree[root].o;</span><br><span class="line"><span class="keyword">if</span>(Tree[root].right != <span class="number">-1</span>) </span><br><span class="line">  inorder(Tree[root].right);</span><br><span class="line">res = res + <span class="string">")"</span>;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>最后输出的时候从begin()+1到end()-1
-<ul>
+<li>最后输出的时候从begin()+1到end()-1<ul>
 <li>注意判断一下res字符串的长度</li>
 </ul>
 </li>
 </ul>
-<h2 id="1131-dfs">1131(DFS)</h2>
-<h2 id="1132-字符串操作">1132(字符串操作)</h2>
-<ul>
+<h2 id="1131-DFS"><a href="#1131-DFS" class="headerlink" title="1131(DFS)"></a>1131(DFS)</h2><h2 id="1132-字符串操作"><a href="#1132-字符串操作" class="headerlink" title="1132(字符串操作)"></a>1132(字符串操作)</h2><ul>
 <li>注意除以0</li>
 </ul>
-<h2 id="1133-数组式链表">1133(数组式链表)</h2>
-<h2 id="1134-判断是否为顶点覆盖">1134(判断是否为顶点覆盖)</h2>
-<ul>
-<li>
-<p>邻接矩阵表示边</p>
+<h2 id="1133-数组式链表"><a href="#1133-数组式链表" class="headerlink" title="1133(数组式链表)"></a>1133(数组式链表)</h2><h2 id="1134-判断是否为顶点覆盖"><a href="#1134-判断是否为顶点覆盖" class="headerlink" title="1134(判断是否为顶点覆盖)"></a>1134(判断是否为顶点覆盖)</h2><ul>
+<li><p>邻接矩阵表示边</p>
 <p>某一个点a被选中，若边没有被选中<code>e[a][b] = e[b][a] = true</code>，计数cnt增加1，cnt==M时，说明全部覆盖</p>
 </li>
-<li>
-<p>给边编号，用二维vector记录每个点连接了哪些边</p>
-<p><strong>比如a b两个结点构成的这条边的编号为0，则v[a].push_back(0)，v[b].push_back(0)——表示a属于0号边，b也属于0号边</strong></p>
+<li><p>给边编号，用二维vector记录每个点连接了哪些边</p>
+<p><strong>比如a b两个结点构成的这条边的编号为0，则v[a].push_back(0)，v[b].push_back(0)——表示a属于0号边，b也属于0号边</strong> </p>
 </li>
 </ul>
-<h2 id="1135-判断红黑树">1135(判断红黑树)</h2>
-<ul>
+<h2 id="1135-判断红黑树"><a href="#1135-判断红黑树" class="headerlink" title="1135(判断红黑树)"></a>1135(判断红黑树)</h2><ul>
 <li>由于是二叉查找树，所以中序已知</li>
-<li>已知前序和中序，转换成level序，可以通过index遍历
-<ul>
+<li>已知前序和中序，转换成level序，可以通过index遍历<ul>
 <li>judge1判断红节点的儿子是否满足</li>
 <li>judge2判断某节点到叶子，黑色节点的个数是否相同</li>
 </ul>
@@ -1371,64 +1155,48 @@
 <li>要细心，每次level数组都要初始化，漏掉了这一点，这个bug找了两三个小时</li>
 <li>也可以直接建树</li>
 </ul>
-<h2 id="1136-字符串模拟整数相加">1136(字符串模拟整数相加)</h2>
-<h2 id="1137-map应用-排序">1137(map应用，排序)</h2>
-<h2 id="1138-前序-中序转后续-树的遍历转换">1138(前序+中序转后续，树的遍历转换)</h2>
-<h2 id="1139-模拟-细节题">1139(模拟，细节题)</h2>
-<ul>
+<h2 id="1136-字符串模拟整数相加"><a href="#1136-字符串模拟整数相加" class="headerlink" title="1136(字符串模拟整数相加)"></a>1136(字符串模拟整数相加)</h2><h2 id="1137-map应用，排序"><a href="#1137-map应用，排序" class="headerlink" title="1137(map应用，排序)"></a>1137(map应用，排序)</h2><h2 id="1138-前序-中序转后续，树的遍历转换"><a href="#1138-前序-中序转后续，树的遍历转换" class="headerlink" title="1138(前序+中序转后续，树的遍历转换)"></a>1138(前序+中序转后续，树的遍历转换)</h2><h2 id="1139-模拟，细节题"><a href="#1139-模拟，细节题" class="headerlink" title="1139(模拟，细节题)"></a>1139(模拟，细节题)</h2><ul>
 <li>-0000无法根据读取整数判断性别，需要用字符串读取</li>
 <li>A在寻找同性朋友时，要避免找到TA想要的伴侣，B亦如此</li>
 </ul>
-<h2 id="1140-字符串处理">1140(字符串处理)</h2>
-<h2 id="1141-map引用非滥用-排序">1141(map引用非滥用，排序)</h2>
-<ul>
+<h2 id="1140-字符串处理"><a href="#1140-字符串处理" class="headerlink" title="1140(字符串处理)"></a>1140(字符串处理)</h2><h2 id="1141-map引用非滥用，排序"><a href="#1141-map引用非滥用，排序" class="headerlink" title="1141(map引用非滥用，排序)"></a>1141(map引用非滥用，排序)</h2><ul>
 <li>排序是若通过map找到数据进行比较会很慢，我们可以构造DATA结构保存数据，通过结构体内直接比较，减少时间</li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="built_in">string</span> &amp;a, <span class="built_in">string</span> &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(TWS[a].first != TWS[b].first) <span class="keyword">return</span> TWS[a].first &gt; TWS[b].first;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(TWS[a].second != TWS[b].second) <span class="keyword">return</span> TWS[a].second &lt; TWS[b].second;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a &lt; b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显然后者更快</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(DATA &amp;a, DATA &amp;b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.tws != b.tws) <span class="keyword">return</span> a.tws &gt; b.tws;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(a.Ns != b.Ns) <span class="keyword">return</span> a.Ns &lt; b.Ns;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.name &lt; b.name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="1142-最大团判断clique">1142(最大团判断Clique)</h2>
-<h2 id="1143-找到最深相同根节点-lca">1143(找到最深相同根节点 LCA)</h2>
-<ul>
+<h2 id="1142-最大团判断Clique"><a href="#1142-最大团判断Clique" class="headerlink" title="1142(最大团判断Clique)"></a>1142(最大团判断Clique)</h2><h2 id="1143-找到最深相同根节点-LCA"><a href="#1143-找到最深相同根节点-LCA" class="headerlink" title="1143(找到最深相同根节点 LCA)"></a>1143(找到最深相同根节点 LCA)</h2><ul>
 <li>遍历的前序性保证了结果</li>
 </ul>
-<h2 id="1144-map简单使用">1144(map简单使用)</h2>
-<ul>
+<h2 id="1144-map简单使用"><a href="#1144-map简单使用" class="headerlink" title="1144(map简单使用)"></a>1144(map简单使用)</h2><ul>
 <li>思路简单</li>
 </ul>
-<h2 id="1145-hash-二次探测法">1145(hash，二次探测法)</h2>
-<ul>
-<li>key+i*i % Size; i = 0, 1, 2, ..., Size-1</li>
+<h2 id="1145-hash，二次探测法"><a href="#1145-hash，二次探测法" class="headerlink" title="1145(hash，二次探测法)"></a>1145(hash，二次探测法)</h2><ul>
+<li>key+i*i % Size; i = 0, 1, 2, …, Size-1</li>
 </ul>
-<h2 id="1146-拓扑序列判断">1146(拓扑序列判断)</h2>
-<ul>
+<h2 id="1146-拓扑序列判断"><a href="#1146-拓扑序列判断" class="headerlink" title="1146(拓扑序列判断)"></a>1146(拓扑序列判断)</h2><ul>
 <li>定义在一种偏序下的全排列</li>
 <li>每次选区入度为0（没有前驱）的节点，删除与该节点相连的边（或者把这个节点disable掉）</li>
 <li><code>pre[][]</code>邻接矩阵记录前驱信息，如果当前输出有enable（没选或者之前没出现）的前驱（即入度不为0），那么该序列不是拓扑序列</li>
 </ul>
-<h2 id="1147-判断堆-树的遍历">1147(判断堆，树的遍历)</h2>
-<ul>
+<h2 id="1147-判断堆，树的遍历"><a href="#1147-判断堆，树的遍历" class="headerlink" title="1147(判断堆，树的遍历)"></a>1147(判断堆，树的遍历)</h2><ul>
 <li>完全二叉树层序遍历转后序遍历</li>
 <li>判断最大最小堆</li>
 </ul>
-<h2 id="1148-逻辑题-模拟">1148(逻辑题，模拟)</h2>
-<ul>
+<h2 id="1148-逻辑题，模拟"><a href="#1148-逻辑题，模拟" class="headerlink" title="1148(逻辑题，模拟)"></a>1148(逻辑题，模拟)</h2><ul>
 <li>首先狼人的个数是确定的2人，狼人中有一人说谎，平民中有一人说谎，同时要输出最小序列，那么直接从从到达枚举，一旦没有冲突，就找到了答案</li>
 <li>先确定两个狼人</li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N<span class="number">-1</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= N; j++) &#123;</span><br><span class="line">        <span class="comment">// i, j 就是狼人，其余为人，记住这是事实</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;=N; k++) &#123;</span><br><span class="line">            <span class="comment">// 逐个检查它们说的话，分别记录两方说谎人数</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(两方说还人数都是<span class="number">1</span>人) &#123;</span><br><span class="line">            <span class="comment">// 找到了</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(找到了) <span class="keyword">break</span>；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="1149-逻辑题">1149(逻辑题)</h2>
-<ul>
+<h2 id="1149-逻辑题"><a href="#1149-逻辑题" class="headerlink" title="1149(逻辑题)"></a>1149(逻辑题)</h2><ul>
 <li>注意一种气体可能与多种气体不相容，要用vector保存</li>
 <li>类似于 Damn single</li>
 </ul>
-<h2 id="1150-逻辑题-判断tsp回路">1150(逻辑题，判断TSP回路)</h2>
-<ul>
+<h2 id="1150-逻辑题，判断TSP回路"><a href="#1150-逻辑题，判断TSP回路" class="headerlink" title="1150(逻辑题，判断TSP回路)"></a>1150(逻辑题，判断TSP回路)</h2><ul>
 <li>弄清判断条件即可</li>
 <li>TSP simple : 遍历所有点，起始点=终止点，n = N+1</li>
 <li>TSP circle:  遍历所有点，起始点=终止点</li>
 <li>Non TSP : 遍历不全或不是circle</li>
 </ul>
-<h2 id="1151-类似于1143lca">1151(类似于1143LCA)</h2>
-<ul>
+<h2 id="1151-类似于1143LCA"><a href="#1151-类似于1143LCA" class="headerlink" title="1151(类似于1143LCA)"></a>1151(类似于1143LCA)</h2><ul>
 <li>加速方法：用map记录中序各个元素的下标，省去每次的查找</li>
 <li>注意可能有负数，不能直接数组表示seen，要用map</li>
 <li>依次遍历前序，找到第一个pre[i]在中序中的位置在a和b之间或者就是a或b</li>
@@ -1496,13 +1264,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/PAT/" rel="tag"># PAT</a>
-          
-            <a href="/tags/ZJU-PAT/" rel="tag"># ZJU-PAT</a>
-          
             <a href="/tags/OJ/" rel="tag"># OJ</a>
           
             <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+          
+            <a href="/tags/PAT/" rel="tag"># PAT</a>
+          
+            <a href="/tags/ZJU-PAT/" rel="tag"># ZJU-PAT</a>
           
         </div>
       
@@ -1733,7 +1501,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1001-字符串处理"><span class="nav-number">1.</span> <span class="nav-text">1001(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1002-两路merge"><span class="nav-number">2.</span> <span class="nav-text">1002(两路merge)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1003-dijkstra算法-点带权"><span class="nav-number">3.</span> <span class="nav-text">1003(Dijkstra算法 点带权)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1004-dfs-bfs-层序遍历"><span class="nav-number">4.</span> <span class="nav-text">1004(DFS, BFS, 层序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1005-字符串处理"><span class="nav-number">5.</span> <span class="nav-text">1005(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1006-模拟-优先队列应用"><span class="nav-number">6.</span> <span class="nav-text">1006(模拟，优先队列应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1007-最大连续子序列之和"><span class="nav-number">7.</span> <span class="nav-text">1007(最大连续子序列之和)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1008-数学问题"><span class="nav-number">8.</span> <span class="nav-text">1008(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1009-模拟-map应用"><span class="nav-number">9.</span> <span class="nav-text">1009(模拟，map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1010-二分法"><span class="nav-number">10.</span> <span class="nav-text">1010(二分法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1011-查找元素-优先队列应用"><span class="nav-number">11.</span> <span class="nav-text">1011(查找元素，优先队列应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1012-排序"><span class="nav-number">12.</span> <span class="nav-text">1012(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1013-图的遍历-dfs统计连通分量的个数"><span class="nav-number">13.</span> <span class="nav-text">1013(图的遍历，DFS统计连通分量的个数)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1014-queue应用-模拟"><span class="nav-number">14.</span> <span class="nav-text">1014(queue应用，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1015-素数-计算reverse-number"><span class="nav-number">15.</span> <span class="nav-text">1015(素数，计算reverse number)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1016-排序"><span class="nav-number">16.</span> <span class="nav-text">1016(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1017-queue的应用-模拟"><span class="nav-number">17.</span> <span class="nav-text">1017(queue的应用，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1018-dijkstra-算法-dfs搜索最优路径-点带权-判定方法不同-多路径储存"><span class="nav-number">18.</span> <span class="nav-text">1018(Dijkstra 算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1019-回文数-字符串处理"><span class="nav-number">19.</span> <span class="nav-text">1019(回文数，字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1020-树的遍历-之间的转换"><span class="nav-number">20.</span> <span class="nav-text">1020(树的遍历，之间的转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1021-图的遍历-dfs-计算连通分量的个数-disjoint-set"><span class="nav-number">21.</span> <span class="nav-text">1021(图的遍历，DFS，计算连通分量的个数，Disjoint set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1022-map应用"><span class="nav-number">22.</span> <span class="nav-text">1022(map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1023-大整数运算-字符串操作"><span class="nav-number">23.</span> <span class="nav-text">1023(大整数运算，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1024-大整数运算-字符串实现"><span class="nav-number">24.</span> <span class="nav-text">1024(大整数运算，字符串实现)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1025-排序"><span class="nav-number">25.</span> <span class="nav-text">1025(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1026-模拟-queue应用-数据结构设计"><span class="nav-number">26.</span> <span class="nav-text">1026(模拟，queue应用，数据结构设计)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1027-进制转换"><span class="nav-number">27.</span> <span class="nav-text">1027(进制转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1028-排序"><span class="nav-number">28.</span> <span class="nav-text">1028(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1029-排序-边读边排"><span class="nav-number">29.</span> <span class="nav-text">1029(排序，边读边排)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1030-dijkstra算法-dfs-最短路径-边带权"><span class="nav-number">30.</span> <span class="nav-text">1030(Dijkstra算法 + DFS，最短路径，边带权)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1031-字符串操作-数学问题"><span class="nav-number">31.</span> <span class="nav-text">1031(字符串操作，数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1032-数组形式链表"><span class="nav-number">32.</span> <span class="nav-text">1032(数组形式链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1033-贪心"><span class="nav-number">33.</span> <span class="nav-text">1033(贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1034-dfs-有向图遍历-map应用"><span class="nav-number">34.</span> <span class="nav-text">1034(DFS，有向图遍历，map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1035-字符串操作"><span class="nav-number">35.</span> <span class="nav-text">1035(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1036-排序-查找"><span class="nav-number">36.</span> <span class="nav-text">1036(排序、查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1037-排序-求和"><span class="nav-number">37.</span> <span class="nav-text">1037(排序，求和)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1038-贪心？字符串比较"><span class="nav-number">38.</span> <span class="nav-text">1038(贪心？字符串比较)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1039-映射-大数据查找"><span class="nav-number">39.</span> <span class="nav-text">1039(映射，大数据查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1040-dp最长公共子串lc-substring"><span class="nav-number">40.</span> <span class="nav-text">1040(DP最长公共子串LC-Substring)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1041-queue应用-hash散列"><span class="nav-number">41.</span> <span class="nav-text">1041(queue应用，Hash散列)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1042-排序"><span class="nav-number">42.</span> <span class="nav-text">1042(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1043-树遍历以及之间的关系"><span class="nav-number">43.</span> <span class="nav-text">1043(树遍历以及之间的关系)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1044-二分法-查找"><span class="nav-number">44.</span> <span class="nav-text">1044(二分法，查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1045-lc-subsequence"><span class="nav-number">45.</span> <span class="nav-text">1045(LC-Subsequence)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1046-模拟-online边读入边计算"><span class="nav-number">46.</span> <span class="nav-text">1046(模拟，online边读入边计算)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1047-1039的逆过程-大数据查找"><span class="nav-number">47.</span> <span class="nav-text">1047(1039的逆过程，大数据查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1048-查找-二分查找"><span class="nav-number">48.</span> <span class="nav-text">1048(查找，二分查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1049-数学问题"><span class="nav-number">49.</span> <span class="nav-text">1049(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1050-字符操作-字符串操作"><span class="nav-number">50.</span> <span class="nav-text">1050(字符操作，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1051-栈模拟-出栈序列判断"><span class="nav-number">51.</span> <span class="nav-text">1051(栈模拟，出栈序列判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1052-链表"><span class="nav-number">52.</span> <span class="nav-text">1052(链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1053-树遍历-dfs"><span class="nav-number">53.</span> <span class="nav-text">1053(树遍历，DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1054-map的应用"><span class="nav-number">54.</span> <span class="nav-text">1054(map的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1055-排序"><span class="nav-number">55.</span> <span class="nav-text">1055(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1056-模拟-排序-priority-queue"><span class="nav-number">56.</span> <span class="nav-text">1056(模拟，排序，priority_queue)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1057-bit树状数组"><span class="nav-number">57.</span> <span class="nav-text">1057(BIT树状数组)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1058-进制转换"><span class="nav-number">58.</span> <span class="nav-text">1058(进制转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1059-生成素数表"><span class="nav-number">59.</span> <span class="nav-text">1059(生成素数表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1060-科学计数"><span class="nav-number">60.</span> <span class="nav-text">1060(科学计数)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1061-字符串处理"><span class="nav-number">61.</span> <span class="nav-text">1061(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1062-排序"><span class="nav-number">62.</span> <span class="nav-text">1062(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1063-set应用"><span class="nav-number">63.</span> <span class="nav-text">1063(Set应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1064-完全二叉树-cbt"><span class="nav-number">64.</span> <span class="nav-text">1064(完全二叉树，CBT)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1065-大数相加-判断越界"><span class="nav-number">65.</span> <span class="nav-text">1065(大数相加，判断越界)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1066-avl-tree"><span class="nav-number">66.</span> <span class="nav-text">1066(AVL tree)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1067-模拟-贪心"><span class="nav-number">67.</span> <span class="nav-text">1067(模拟，贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1068-01背包问题knapsack-problem"><span class="nav-number">68.</span> <span class="nav-text">1068(01背包问题Knapsack problem)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1069-数学问题"><span class="nav-number">69.</span> <span class="nav-text">1069(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1070-简单贪心"><span class="nav-number">70.</span> <span class="nav-text">1070(简单贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1071-map的应用"><span class="nav-number">71.</span> <span class="nav-text">1071(map的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1072-dijkstra算法"><span class="nav-number">72.</span> <span class="nav-text">1072(Dijkstra算法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1073-字符串操作-科学计数法"><span class="nav-number">73.</span> <span class="nav-text">1073(字符串操作，科学计数法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1074-链表数组表示-分组"><span class="nav-number">74.</span> <span class="nav-text">1074(链表数组表示，分组)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1075-排序"><span class="nav-number">75.</span> <span class="nav-text">1075(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1076-bfs-queue的应用"><span class="nav-number">76.</span> <span class="nav-text">1076(BFS, queue的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1077-字符串操作"><span class="nav-number">77.</span> <span class="nav-text">1077(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1078-hash二次探测法"><span class="nav-number">78.</span> <span class="nav-text">1078(hash二次探测法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1079-树的遍历-dfs-or-bfs"><span class="nav-number">79.</span> <span class="nav-text">1079(树的遍历，DFS or BFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1080-排序"><span class="nav-number">80.</span> <span class="nav-text">1080(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1081-gcd-分数相加模拟"><span class="nav-number">81.</span> <span class="nav-text">1081(gcd，分数相加模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1082-字符串操作"><span class="nav-number">82.</span> <span class="nav-text">1082(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1083-简单排序"><span class="nav-number">83.</span> <span class="nav-text">1083(简单排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1084-简单字符串操作"><span class="nav-number">84.</span> <span class="nav-text">1084(简单字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1085-二分法-查找"><span class="nav-number">85.</span> <span class="nav-text">1085(二分法，查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1086-树的遍历之间的关系"><span class="nav-number">86.</span> <span class="nav-text">1086(树的遍历之间的关系)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1087-dijkstra-路径保存-dfs搜索最优路径"><span class="nav-number">87.</span> <span class="nav-text">1087(Dijkstra+路径保存+DFS搜索最优路径)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1088-分数四则运算-字符串操作"><span class="nav-number">88.</span> <span class="nav-text">1088(分数四则运算，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1089-插入排序-merge-sort-判断与模拟"><span class="nav-number">89.</span> <span class="nav-text">1089(插入排序，Merge Sort，判断与模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1090-简单dfs"><span class="nav-number">90.</span> <span class="nav-text">1090(简单DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1091-bfs-三维方向"><span class="nav-number">91.</span> <span class="nav-text">1091(BFS，三维方向)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1092-字符串处理"><span class="nav-number">92.</span> <span class="nav-text">1092(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1093-字符串处理"><span class="nav-number">93.</span> <span class="nav-text">1093(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1094-dfs-bfs-树遍历"><span class="nav-number">94.</span> <span class="nav-text">1094(DFS, BFS，树遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1095-模拟difficult"><span class="nav-number">95.</span> <span class="nav-text">1095(模拟difficult)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1096-循环-逻辑题"><span class="nav-number">96.</span> <span class="nav-text">1096(循环，逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1097-链表-类似题1032-1052-1074"><span class="nav-number">97.</span> <span class="nav-text">1097(链表，类似题1032、1052、1074)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1098-insertion-sort-heap-sort判断与模拟"><span class="nav-number">98.</span> <span class="nav-text">1098(Insertion sort、Heap sort判断与模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1099"><span class="nav-number">99.</span> <span class="nav-text">1099</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1100-字符串处理"><span class="nav-number">100.</span> <span class="nav-text">1100(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1101-quick-sort"><span class="nav-number">101.</span> <span class="nav-text">1101(quick sort)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1102-层序遍历-中序遍历"><span class="nav-number">102.</span> <span class="nav-text">1102(层序遍历，中序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1103-dfs-剪枝-用数组储存幂值加速"><span class="nav-number">103.</span> <span class="nav-text">1103(DFS+剪枝，用数组储存幂值加速)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1104-数学问题"><span class="nav-number">104.</span> <span class="nav-text">1104(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1105-数学问题"><span class="nav-number">105.</span> <span class="nav-text">1105(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1106-bfs"><span class="nav-number">106.</span> <span class="nav-text">1106(BFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1107-并查集"><span class="nav-number">107.</span> <span class="nav-text">1107(并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1108-字符串处理"><span class="nav-number">108.</span> <span class="nav-text">1108(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1109-排序后指定输出"><span class="nav-number">109.</span> <span class="nav-text">1109(排序后指定输出)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1110-bfs-完全二叉树判断"><span class="nav-number">110.</span> <span class="nav-text">1110(BFS, 完全二叉树判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1111-dijkstra-路径选择"><span class="nav-number">111.</span> <span class="nav-text">1111(Dijkstra，路径选择)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1112-字符串操作"><span class="nav-number">112.</span> <span class="nav-text">1112(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1113-排序"><span class="nav-number">113.</span> <span class="nav-text">1113(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1114-并查集"><span class="nav-number">114.</span> <span class="nav-text">1114(并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1115-bfs-建立bst"><span class="nav-number">115.</span> <span class="nav-text">1115(BFS，建立BST)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1116-简单逻辑题"><span class="nav-number">116.</span> <span class="nav-text">1116(简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1117-逻辑题-难看懂题目-排序"><span class="nav-number">117.</span> <span class="nav-text">1117(逻辑题，难看懂题目,排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1118-简单并查集"><span class="nav-number">118.</span> <span class="nav-text">1118(简单并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1119-树遍历之间的转换-前序后序转中序"><span class="nav-number">119.</span> <span class="nav-text">1119(树遍历之间的转换，前序后序转中序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1120-简单题"><span class="nav-number">120.</span> <span class="nav-text">1120(简单题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1121-数组map-简单题"><span class="nav-number">121.</span> <span class="nav-text">1121(数组map，简单题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1122-哈密尔顿回路判定"><span class="nav-number">122.</span> <span class="nav-text">1122(哈密尔顿回路判定)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1123-avl-tree-层序遍历"><span class="nav-number">123.</span> <span class="nav-text">1123(AVL tree，层序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1124-map-简单逻辑题"><span class="nav-number">124.</span> <span class="nav-text">1124(map，简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1125-简单逻辑题"><span class="nav-number">125.</span> <span class="nav-text">1125(简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1126-欧拉回路-半欧拉路径判定"><span class="nav-number">126.</span> <span class="nav-text">1126(欧拉回路，半欧拉路径判定)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1127-post-order-in-order-level-order-zigzag输出"><span class="nav-number">127.</span> <span class="nav-text">1127(post order+in order =&gt; level order zigzag输出)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1028-逻辑题-判断-n-queens-puzzle"><span class="nav-number">128.</span> <span class="nav-text">1028(逻辑题，判断 N Queens Puzzle)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1129-逻辑题-也可以用set重载-来做"><span class="nav-number">129.</span> <span class="nav-text">1129(逻辑题，也可以用set重载&lt;来做)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1130-树中序遍历"><span class="nav-number">130.</span> <span class="nav-text">1130(树中序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1131-dfs"><span class="nav-number">131.</span> <span class="nav-text">1131(DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1132-字符串操作"><span class="nav-number">132.</span> <span class="nav-text">1132(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1133-数组式链表"><span class="nav-number">133.</span> <span class="nav-text">1133(数组式链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1134-判断是否为顶点覆盖"><span class="nav-number">134.</span> <span class="nav-text">1134(判断是否为顶点覆盖)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1135-判断红黑树"><span class="nav-number">135.</span> <span class="nav-text">1135(判断红黑树)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1136-字符串模拟整数相加"><span class="nav-number">136.</span> <span class="nav-text">1136(字符串模拟整数相加)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1137-map应用-排序"><span class="nav-number">137.</span> <span class="nav-text">1137(map应用，排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1138-前序-中序转后续-树的遍历转换"><span class="nav-number">138.</span> <span class="nav-text">1138(前序+中序转后续，树的遍历转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1139-模拟-细节题"><span class="nav-number">139.</span> <span class="nav-text">1139(模拟，细节题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1140-字符串处理"><span class="nav-number">140.</span> <span class="nav-text">1140(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1141-map引用非滥用-排序"><span class="nav-number">141.</span> <span class="nav-text">1141(map引用非滥用，排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1142-最大团判断clique"><span class="nav-number">142.</span> <span class="nav-text">1142(最大团判断Clique)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1143-找到最深相同根节点-lca"><span class="nav-number">143.</span> <span class="nav-text">1143(找到最深相同根节点 LCA)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1144-map简单使用"><span class="nav-number">144.</span> <span class="nav-text">1144(map简单使用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1145-hash-二次探测法"><span class="nav-number">145.</span> <span class="nav-text">1145(hash，二次探测法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1146-拓扑序列判断"><span class="nav-number">146.</span> <span class="nav-text">1146(拓扑序列判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1147-判断堆-树的遍历"><span class="nav-number">147.</span> <span class="nav-text">1147(判断堆，树的遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1148-逻辑题-模拟"><span class="nav-number">148.</span> <span class="nav-text">1148(逻辑题，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1149-逻辑题"><span class="nav-number">149.</span> <span class="nav-text">1149(逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1150-逻辑题-判断tsp回路"><span class="nav-number">150.</span> <span class="nav-text">1150(逻辑题，判断TSP回路)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1151-类似于1143lca"><span class="nav-number">151.</span> <span class="nav-text">1151(类似于1143LCA)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1001-字符串处理"><span class="nav-number">1.</span> <span class="nav-text">1001(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1002-两路merge"><span class="nav-number">2.</span> <span class="nav-text">1002(两路merge)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1003-Dijkstra算法-点带权"><span class="nav-number">3.</span> <span class="nav-text">1003(Dijkstra算法 点带权)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1004-DFS-BFS-层序遍历"><span class="nav-number">4.</span> <span class="nav-text">1004(DFS, BFS, 层序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1005-字符串处理"><span class="nav-number">5.</span> <span class="nav-text">1005(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1006-模拟，优先队列应用"><span class="nav-number">6.</span> <span class="nav-text">1006(模拟，优先队列应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1007-最大连续子序列之和"><span class="nav-number">7.</span> <span class="nav-text">1007(最大连续子序列之和)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1008-数学问题"><span class="nav-number">8.</span> <span class="nav-text">1008(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1009-模拟，map应用"><span class="nav-number">9.</span> <span class="nav-text">1009(模拟，map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1010-二分法"><span class="nav-number">10.</span> <span class="nav-text">1010(二分法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1011-查找元素，优先队列应用"><span class="nav-number">11.</span> <span class="nav-text">1011(查找元素，优先队列应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1012-排序"><span class="nav-number">12.</span> <span class="nav-text">1012(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1013-图的遍历，DFS统计连通分量的个数"><span class="nav-number">13.</span> <span class="nav-text">1013(图的遍历，DFS统计连通分量的个数)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1014-queue应用，模拟"><span class="nav-number">14.</span> <span class="nav-text">1014(queue应用，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1015-素数，计算reverse-number"><span class="nav-number">15.</span> <span class="nav-text">1015(素数，计算reverse number)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1016-排序"><span class="nav-number">16.</span> <span class="nav-text">1016(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1017-queue的应用，模拟"><span class="nav-number">17.</span> <span class="nav-text">1017(queue的应用，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1018-Dijkstra-算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存"><span class="nav-number">18.</span> <span class="nav-text">1018(Dijkstra 算法，DFS搜索最优路径，点带权，判定方法不同，多路径储存)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1019-回文数，字符串处理"><span class="nav-number">19.</span> <span class="nav-text">1019(回文数，字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1020-树的遍历，之间的转换"><span class="nav-number">20.</span> <span class="nav-text">1020(树的遍历，之间的转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1021-图的遍历，DFS，计算连通分量的个数，Disjoint-set"><span class="nav-number">21.</span> <span class="nav-text">1021(图的遍历，DFS，计算连通分量的个数，Disjoint set)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1022-map应用"><span class="nav-number">22.</span> <span class="nav-text">1022(map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1023-大整数运算，字符串操作"><span class="nav-number">23.</span> <span class="nav-text">1023(大整数运算，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1024-大整数运算，字符串实现"><span class="nav-number">24.</span> <span class="nav-text">1024(大整数运算，字符串实现)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1025-排序"><span class="nav-number">25.</span> <span class="nav-text">1025(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1026-模拟，queue应用，数据结构设计"><span class="nav-number">26.</span> <span class="nav-text">1026(模拟，queue应用，数据结构设计)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1027-进制转换"><span class="nav-number">27.</span> <span class="nav-text">1027(进制转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1028-排序"><span class="nav-number">28.</span> <span class="nav-text">1028(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1029-排序，边读边排"><span class="nav-number">29.</span> <span class="nav-text">1029(排序，边读边排)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1030-Dijkstra算法-DFS，最短路径，边带权"><span class="nav-number">30.</span> <span class="nav-text">1030(Dijkstra算法 + DFS，最短路径，边带权)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1031-字符串操作，数学问题"><span class="nav-number">31.</span> <span class="nav-text">1031(字符串操作，数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1032-数组形式链表"><span class="nav-number">32.</span> <span class="nav-text">1032(数组形式链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1033-贪心"><span class="nav-number">33.</span> <span class="nav-text">1033(贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1034-DFS，有向图遍历，map应用"><span class="nav-number">34.</span> <span class="nav-text">1034(DFS，有向图遍历，map应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1035-字符串操作"><span class="nav-number">35.</span> <span class="nav-text">1035(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1036-排序、查找"><span class="nav-number">36.</span> <span class="nav-text">1036(排序、查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1037-排序，求和"><span class="nav-number">37.</span> <span class="nav-text">1037(排序，求和)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1038-贪心？字符串比较"><span class="nav-number">38.</span> <span class="nav-text">1038(贪心？字符串比较)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1039-映射，大数据查找"><span class="nav-number">39.</span> <span class="nav-text">1039(映射，大数据查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1040-DP最长公共子串LC-Substring"><span class="nav-number">40.</span> <span class="nav-text">1040(DP最长公共子串LC-Substring)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1041-queue应用，Hash散列"><span class="nav-number">41.</span> <span class="nav-text">1041(queue应用，Hash散列)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1042-排序"><span class="nav-number">42.</span> <span class="nav-text">1042(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1043-树遍历以及之间的关系"><span class="nav-number">43.</span> <span class="nav-text">1043(树遍历以及之间的关系)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1044-二分法，查找"><span class="nav-number">44.</span> <span class="nav-text">1044(二分法，查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1045-LC-Subsequence"><span class="nav-number">45.</span> <span class="nav-text">1045(LC-Subsequence)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1046-模拟，online边读入边计算"><span class="nav-number">46.</span> <span class="nav-text">1046(模拟，online边读入边计算)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1047-1039的逆过程，大数据查找"><span class="nav-number">47.</span> <span class="nav-text">1047(1039的逆过程，大数据查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1048-查找，二分查找"><span class="nav-number">48.</span> <span class="nav-text">1048(查找，二分查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1049-数学问题"><span class="nav-number">49.</span> <span class="nav-text">1049(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1050-字符操作，字符串操作"><span class="nav-number">50.</span> <span class="nav-text">1050(字符操作，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1051-栈模拟，出栈序列判断"><span class="nav-number">51.</span> <span class="nav-text">1051(栈模拟，出栈序列判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1052-链表"><span class="nav-number">52.</span> <span class="nav-text">1052(链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1053-树遍历，DFS"><span class="nav-number">53.</span> <span class="nav-text">1053(树遍历，DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1054-map的应用"><span class="nav-number">54.</span> <span class="nav-text">1054(map的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1055-排序"><span class="nav-number">55.</span> <span class="nav-text">1055(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1056-模拟，排序，priority-queue"><span class="nav-number">56.</span> <span class="nav-text">1056(模拟，排序，priority_queue)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1057-BIT树状数组"><span class="nav-number">57.</span> <span class="nav-text">1057(BIT树状数组)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1058-进制转换"><span class="nav-number">58.</span> <span class="nav-text">1058(进制转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1059-生成素数表"><span class="nav-number">59.</span> <span class="nav-text">1059(生成素数表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1060-科学计数"><span class="nav-number">60.</span> <span class="nav-text">1060(科学计数)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1061-字符串处理"><span class="nav-number">61.</span> <span class="nav-text">1061(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1062-排序"><span class="nav-number">62.</span> <span class="nav-text">1062(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1063-Set应用"><span class="nav-number">63.</span> <span class="nav-text">1063(Set应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1064-完全二叉树，CBT"><span class="nav-number">64.</span> <span class="nav-text">1064(完全二叉树，CBT)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1065-大数相加，判断越界"><span class="nav-number">65.</span> <span class="nav-text">1065(大数相加，判断越界)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1066-AVL-tree"><span class="nav-number">66.</span> <span class="nav-text">1066(AVL tree)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1067-模拟，贪心"><span class="nav-number">67.</span> <span class="nav-text">1067(模拟，贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1068-01背包问题Knapsack-problem"><span class="nav-number">68.</span> <span class="nav-text">1068(01背包问题Knapsack problem)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1069-数学问题"><span class="nav-number">69.</span> <span class="nav-text">1069(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1070-简单贪心"><span class="nav-number">70.</span> <span class="nav-text">1070(简单贪心)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1071-map的应用"><span class="nav-number">71.</span> <span class="nav-text">1071(map的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1072-Dijkstra算法"><span class="nav-number">72.</span> <span class="nav-text">1072(Dijkstra算法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1073-字符串操作，科学计数法"><span class="nav-number">73.</span> <span class="nav-text">1073(字符串操作，科学计数法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1074-链表数组表示，分组"><span class="nav-number">74.</span> <span class="nav-text">1074(链表数组表示，分组)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1075-排序"><span class="nav-number">75.</span> <span class="nav-text">1075(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1076-BFS-queue的应用"><span class="nav-number">76.</span> <span class="nav-text">1076(BFS, queue的应用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1077-字符串操作"><span class="nav-number">77.</span> <span class="nav-text">1077(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1078-hash二次探测法"><span class="nav-number">78.</span> <span class="nav-text">1078(hash二次探测法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1079-树的遍历，DFS-or-BFS"><span class="nav-number">79.</span> <span class="nav-text">1079(树的遍历，DFS or BFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1080-排序"><span class="nav-number">80.</span> <span class="nav-text">1080(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1081-gcd，分数相加模拟"><span class="nav-number">81.</span> <span class="nav-text">1081(gcd，分数相加模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1082-字符串操作"><span class="nav-number">82.</span> <span class="nav-text">1082(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1083-简单排序"><span class="nav-number">83.</span> <span class="nav-text">1083(简单排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1084-简单字符串操作"><span class="nav-number">84.</span> <span class="nav-text">1084(简单字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1085-二分法，查找"><span class="nav-number">85.</span> <span class="nav-text">1085(二分法，查找)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1086-树的遍历之间的关系"><span class="nav-number">86.</span> <span class="nav-text">1086(树的遍历之间的关系)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1087-Dijkstra-路径保存-DFS搜索最优路径"><span class="nav-number">87.</span> <span class="nav-text">1087(Dijkstra+路径保存+DFS搜索最优路径)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1088-分数四则运算，字符串操作"><span class="nav-number">88.</span> <span class="nav-text">1088(分数四则运算，字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1089-插入排序，Merge-Sort，判断与模拟"><span class="nav-number">89.</span> <span class="nav-text">1089(插入排序，Merge Sort，判断与模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1090-简单DFS"><span class="nav-number">90.</span> <span class="nav-text">1090(简单DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1091-BFS，三维方向"><span class="nav-number">91.</span> <span class="nav-text">1091(BFS，三维方向)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1092-字符串处理"><span class="nav-number">92.</span> <span class="nav-text">1092(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1093-字符串处理"><span class="nav-number">93.</span> <span class="nav-text">1093(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1094-DFS-BFS，树遍历"><span class="nav-number">94.</span> <span class="nav-text">1094(DFS, BFS，树遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1095-模拟difficult"><span class="nav-number">95.</span> <span class="nav-text">1095(模拟difficult)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1096-循环，逻辑题"><span class="nav-number">96.</span> <span class="nav-text">1096(循环，逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1097-链表，类似题1032、1052、1074"><span class="nav-number">97.</span> <span class="nav-text">1097(链表，类似题1032、1052、1074)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1098-Insertion-sort、Heap-sort判断与模拟"><span class="nav-number">98.</span> <span class="nav-text">1098(Insertion sort、Heap sort判断与模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1099"><span class="nav-number">99.</span> <span class="nav-text">1099</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1100-字符串处理"><span class="nav-number">100.</span> <span class="nav-text">1100(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1101-quick-sort"><span class="nav-number">101.</span> <span class="nav-text">1101(quick sort)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1102-层序遍历，中序遍历"><span class="nav-number">102.</span> <span class="nav-text">1102(层序遍历，中序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1103-DFS-剪枝，用数组储存幂值加速"><span class="nav-number">103.</span> <span class="nav-text">1103(DFS+剪枝，用数组储存幂值加速)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1104-数学问题"><span class="nav-number">104.</span> <span class="nav-text">1104(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1105-数学问题"><span class="nav-number">105.</span> <span class="nav-text">1105(数学问题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1106-BFS"><span class="nav-number">106.</span> <span class="nav-text">1106(BFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1107-并查集"><span class="nav-number">107.</span> <span class="nav-text">1107(并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1108-字符串处理"><span class="nav-number">108.</span> <span class="nav-text">1108(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1109-排序后指定输出"><span class="nav-number">109.</span> <span class="nav-text">1109(排序后指定输出)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1110-BFS-完全二叉树判断"><span class="nav-number">110.</span> <span class="nav-text">1110(BFS, 完全二叉树判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1111-Dijkstra，路径选择"><span class="nav-number">111.</span> <span class="nav-text">1111(Dijkstra，路径选择)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1112-字符串操作"><span class="nav-number">112.</span> <span class="nav-text">1112(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1113-排序"><span class="nav-number">113.</span> <span class="nav-text">1113(排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1114-并查集"><span class="nav-number">114.</span> <span class="nav-text">1114(并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1115-BFS，建立BST"><span class="nav-number">115.</span> <span class="nav-text">1115(BFS，建立BST)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1116-简单逻辑题"><span class="nav-number">116.</span> <span class="nav-text">1116(简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1117-逻辑题，难看懂题目-排序"><span class="nav-number">117.</span> <span class="nav-text">1117(逻辑题，难看懂题目,排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1118-简单并查集"><span class="nav-number">118.</span> <span class="nav-text">1118(简单并查集)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1119-树遍历之间的转换，前序后序转中序"><span class="nav-number">119.</span> <span class="nav-text">1119(树遍历之间的转换，前序后序转中序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1120-简单题"><span class="nav-number">120.</span> <span class="nav-text">1120(简单题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1121-数组map，简单题"><span class="nav-number">121.</span> <span class="nav-text">1121(数组map，简单题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1122-哈密尔顿回路判定"><span class="nav-number">122.</span> <span class="nav-text">1122(哈密尔顿回路判定)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1123-AVL-tree，层序遍历"><span class="nav-number">123.</span> <span class="nav-text">1123(AVL tree，层序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1124-map，简单逻辑题"><span class="nav-number">124.</span> <span class="nav-text">1124(map，简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1125-简单逻辑题"><span class="nav-number">125.</span> <span class="nav-text">1125(简单逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1126-欧拉回路，半欧拉路径判定"><span class="nav-number">126.</span> <span class="nav-text">1126(欧拉回路，半欧拉路径判定)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1127-post-order-in-order-gt-level-order-zigzag输出"><span class="nav-number">127.</span> <span class="nav-text">1127(post order+in order =&gt; level order zigzag输出)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1028-逻辑题，判断-N-Queens-Puzzle"><span class="nav-number">128.</span> <span class="nav-text">1028(逻辑题，判断 N Queens Puzzle)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1129-逻辑题，也可以用set重载-lt-来做"><span class="nav-number">129.</span> <span class="nav-text">1129(逻辑题，也可以用set重载&lt;来做)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1130-树中序遍历"><span class="nav-number">130.</span> <span class="nav-text">1130(树中序遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1131-DFS"><span class="nav-number">131.</span> <span class="nav-text">1131(DFS)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1132-字符串操作"><span class="nav-number">132.</span> <span class="nav-text">1132(字符串操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1133-数组式链表"><span class="nav-number">133.</span> <span class="nav-text">1133(数组式链表)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1134-判断是否为顶点覆盖"><span class="nav-number">134.</span> <span class="nav-text">1134(判断是否为顶点覆盖)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1135-判断红黑树"><span class="nav-number">135.</span> <span class="nav-text">1135(判断红黑树)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1136-字符串模拟整数相加"><span class="nav-number">136.</span> <span class="nav-text">1136(字符串模拟整数相加)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1137-map应用，排序"><span class="nav-number">137.</span> <span class="nav-text">1137(map应用，排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1138-前序-中序转后续，树的遍历转换"><span class="nav-number">138.</span> <span class="nav-text">1138(前序+中序转后续，树的遍历转换)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1139-模拟，细节题"><span class="nav-number">139.</span> <span class="nav-text">1139(模拟，细节题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1140-字符串处理"><span class="nav-number">140.</span> <span class="nav-text">1140(字符串处理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1141-map引用非滥用，排序"><span class="nav-number">141.</span> <span class="nav-text">1141(map引用非滥用，排序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1142-最大团判断Clique"><span class="nav-number">142.</span> <span class="nav-text">1142(最大团判断Clique)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1143-找到最深相同根节点-LCA"><span class="nav-number">143.</span> <span class="nav-text">1143(找到最深相同根节点 LCA)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1144-map简单使用"><span class="nav-number">144.</span> <span class="nav-text">1144(map简单使用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1145-hash，二次探测法"><span class="nav-number">145.</span> <span class="nav-text">1145(hash，二次探测法)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1146-拓扑序列判断"><span class="nav-number">146.</span> <span class="nav-text">1146(拓扑序列判断)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1147-判断堆，树的遍历"><span class="nav-number">147.</span> <span class="nav-text">1147(判断堆，树的遍历)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1148-逻辑题，模拟"><span class="nav-number">148.</span> <span class="nav-text">1148(逻辑题，模拟)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1149-逻辑题"><span class="nav-number">149.</span> <span class="nav-text">1149(逻辑题)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1150-逻辑题，判断TSP回路"><span class="nav-number">150.</span> <span class="nav-text">1150(逻辑题，判断TSP回路)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1151-类似于1143LCA"><span class="nav-number">151.</span> <span class="nav-text">1151(类似于1143LCA)</span></a></li></ol></div>
             
 
           </div>
