@@ -14,4 +14,4 @@ Allow: /js/
 Allow: /lib/
 
 Sitemap: http://molindeng.github.io/sitemap.xml
-Sitemap: http://momods.coding.me/baidusitemap.xml
+Sitemap: http://molindeng.github.io/baidusitemap.xml
