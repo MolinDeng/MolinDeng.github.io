@@ -170,7 +170,7 @@
 
 
   <meta name="description" content="Everyday programing ! See solutions on My LeetCode 1. Two Sum  BF with binary search 哈希表T = O(N) S = O(N)  建立value-index映射 依次遍历，如果另一半在map中，返回当前下标i和map[另一半]；反之将当前&amp;lt;value, index&amp;gt;插入map">
-<meta name="keywords" content="leetcode,OJ,algorithm">
+<meta name="keywords" content="OJ,algorithm,leetcode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode-OJ">
 <meta property="og:url" content="https://molin7.top/post/4c3ebdcd.html">
@@ -181,7 +181,7 @@
 <meta property="og:image" content="https://i.imgur.com/rnvw3FJ.png">
 <meta property="og:image" content="https://leetcode.com/media/original_images/14_lcp_diviso_et_lmpera.png">
 <meta property="og:image" content="https://leetcode.com/media/original_images/14_lcp_binary_search.png">
-<meta property="og:updated_time" content="2018-10-03T12:13:56.735Z">
+<meta property="og:updated_time" content="2018-10-07T12:25:55.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode-OJ">
 <meta name="twitter:description" content="Everyday programing ! See solutions on My LeetCode 1. Two Sum  BF with binary search 哈希表T = O(N) S = O(N)  建立value-index映射 依次遍历，如果另一半在map中，返回当前下标i和map[另一半]；反之将当前&amp;lt;value, index&amp;gt;插入map">
@@ -446,12 +446,24 @@
                 
               
 
-              <time title="Created: 2018-10-03 13:31:54 / Modified: 20:13:56" itemprop="dateCreated datePublished" datetime="2018-10-03T13:31:54+08:00">2018-10-03</time>
+              <time title="Created: 2018-10-03 13:31:54" itemprop="dateCreated datePublished" datetime="2018-10-03T13:31:54+08:00">2018-10-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-07 20:25:55" itemprop="dateModified" datetime="2018-10-07T20:25:55+08:00">2018-10-07</time>
               
             
           </span>
@@ -504,7 +516,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.7k</span>
+                <span title="Symbols count in article">3.2k</span>
               
 
               
@@ -518,7 +530,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">2 mins.</span>
+                <span title="Reading time">3 mins.</span>
               
             </div>
           
@@ -655,6 +667,16 @@
 <p>以字符串排序，<code>LSP(S1,S2,...,Sn)=LSP(S1, Sn)</code></p>
 </li>
 </ul>
+<h3 id="15-3sum">15. 3Sum</h3>
+<ul>
+<li>
+<p><code>T = O(N*N)</code></p>
+</li>
+<li>
+<p>从小到大排序，目的是方便剔除重复，因为当两个点固定时，第三个点可能重复的下标一定是连续的</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; nums[i] &lt; <span class="number">0</span>; ++i) &#123;</span><br><span class="line">    a = nums[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = i + <span class="number">1</span>, k = nums,size()<span class="number">-1</span>; j &lt; k; ) &#123;</span><br><span class="line">        b = nums[j]; c = nums[k];</span><br><span class="line">        sum = a + b + c;</span><br><span class="line">        <span class="keyword">if</span>(sum = <span class="number">0</span>) &#123;</span><br><span class="line">            add to res;</span><br><span class="line">            <span class="keyword">while</span>(j &lt; k &amp;&amp; b == nums[++j]); <span class="comment">// 重复的下标一定相邻</span></span><br><span class="line">            <span class="keyword">while</span>(j &lt; k &amp;&amp; c == nums[--k]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(sum &gt; <span class="number">0</span>) k--;</span><br><span class="line">        <span class="keyword">else</span> j++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -718,11 +740,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
-          
             <a href="/tags/OJ/" rel="tag"># OJ</a>
           
             <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           
         </div>
       
@@ -953,7 +975,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-two-sum"><span class="nav-number">1.</span> <span class="nav-text">1. Two Sum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-add-two-numbers"><span class="nav-number">2.</span> <span class="nav-text">2. Add Two Numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-longest-substring-without-repeating-characters"><span class="nav-number">3.</span> <span class="nav-text">3. Longest Substring Without Repeating Characters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-median-of-two-sorted-arrays"><span class="nav-number">4.</span> <span class="nav-text">4. Median of Two Sorted Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-longest-palindromic-substring"><span class="nav-number">5.</span> <span class="nav-text">5. Longest Palindromic Substring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-zigzag-conversion"><span class="nav-number">6.</span> <span class="nav-text">6. ZigZag Conversion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-reverse-integer"><span class="nav-number">7.</span> <span class="nav-text">7. Reverse Integer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-string-to-integer-atoi"><span class="nav-number">8.</span> <span class="nav-text">8. String to Integer (atoi)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-palindrome-number"><span class="nav-number">9.</span> <span class="nav-text">9. Palindrome Number</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-regular-expression-matching"><span class="nav-number">10.</span> <span class="nav-text">10. Regular Expression Matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-container-with-most-water"><span class="nav-number">11.</span> <span class="nav-text">11. Container With Most Water</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-integer-to-roman"><span class="nav-number">12.</span> <span class="nav-text">12. Integer to Roman</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-roman-to-integer"><span class="nav-number">13.</span> <span class="nav-text">13. Roman to Integer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-longest-common-prefix-lcp"><span class="nav-number">14.</span> <span class="nav-text">14. Longest Common Prefix(LCP)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-two-sum"><span class="nav-number">1.</span> <span class="nav-text">1. Two Sum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-add-two-numbers"><span class="nav-number">2.</span> <span class="nav-text">2. Add Two Numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-longest-substring-without-repeating-characters"><span class="nav-number">3.</span> <span class="nav-text">3. Longest Substring Without Repeating Characters</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-median-of-two-sorted-arrays"><span class="nav-number">4.</span> <span class="nav-text">4. Median of Two Sorted Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-longest-palindromic-substring"><span class="nav-number">5.</span> <span class="nav-text">5. Longest Palindromic Substring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-zigzag-conversion"><span class="nav-number">6.</span> <span class="nav-text">6. ZigZag Conversion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-reverse-integer"><span class="nav-number">7.</span> <span class="nav-text">7. Reverse Integer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-string-to-integer-atoi"><span class="nav-number">8.</span> <span class="nav-text">8. String to Integer (atoi)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-palindrome-number"><span class="nav-number">9.</span> <span class="nav-text">9. Palindrome Number</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-regular-expression-matching"><span class="nav-number">10.</span> <span class="nav-text">10. Regular Expression Matching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-container-with-most-water"><span class="nav-number">11.</span> <span class="nav-text">11. Container With Most Water</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-integer-to-roman"><span class="nav-number">12.</span> <span class="nav-text">12. Integer to Roman</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-roman-to-integer"><span class="nav-number">13.</span> <span class="nav-text">13. Roman to Integer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-longest-common-prefix-lcp"><span class="nav-number">14.</span> <span class="nav-text">14. Longest Common Prefix(LCP)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-3sum"><span class="nav-number">15.</span> <span class="nav-text">15. 3Sum</span></a></li></ol></div>
             
 
           </div>
