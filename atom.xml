@@ -82,16 +82,14 @@
     <link href="https://molin7.top/post/4c3ebdcd.html"/>
     <id>https://molin7.top/post/4c3ebdcd.html</id>
     <published>2018-10-03T05:31:54.000Z</published>
-    <updated>2018-10-08T13:29:55.226Z</updated>
+    <updated>2018-10-09T03:43:20.822Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;font face=&quot;Charmonman&quot; size=&quot;3&quot; color=&quot;#0099ff&quot;&gt;Everyday programing !&lt;/font&gt; See solutions on &lt;a href=&quot;https://github.com/MolinDeng/Leetcode&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My LeetCode&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1-two-sum&quot;&gt;1. Two Sum&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&quot;1-Two-Sum&quot;&gt;&lt;a href=&quot;#1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;1. Two Sum&quot;&gt;&lt;/a&gt;1. Two Sum&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;BF with binary search&lt;/li&gt;
-&lt;li&gt;哈希表&lt;code&gt;T = O(N) S = O(N)&lt;/code&gt;
-&lt;ul&gt;
+&lt;li&gt;哈希表&lt;code&gt;T = O(N) S = O(N)&lt;/code&gt;&lt;ul&gt;
 &lt;li&gt;建立&lt;code&gt;value-index&lt;/code&gt;映射&lt;/li&gt;
 &lt;li&gt;依次遍历，如果&lt;code&gt;另一半&lt;/code&gt;在map中，返回当前下标&lt;code&gt;i&lt;/code&gt;和&lt;code&gt;map[另一半]&lt;/code&gt;；反之将当前&lt;code&gt;&amp;lt;value, index&amp;gt;&lt;/code&gt;插入map&lt;/li&gt;
 &lt;/ul&gt;
